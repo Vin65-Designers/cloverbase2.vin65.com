@@ -1,0 +1,58 @@
+// ============================================ //
+// White + Green //
+// ============================================ //
+
+$logo: 'logo-black.png';
+$logo-retina: 'logo-black@2x.png';
+
+$backgroundColor: $white;
+$borderColor: $lightGrey;
+$altBackgroundColor: $offWhite;
+$altHeadingColor: $headingFontColor;
+$altBorderColor: darken($offWhite, 5%);
+
+$introBgImage: url(../images/texture-white.jpg);
+// $introBgImage: #EFEBEB;
+$introBorderColor: 1px solid #E6E6E6;
+
+$linkColor: $accentColor;
+$buttonColor: $green;
+$buttonHover: darken($green, 5%);
+$secondaryAccentColor: $headingFontColor;
+
+$navLinkColor: #71716D;
+$navLinkHover: #52524E;
+$navSelected: #71716D;
+
+$headerBg: $white;
+$headerBorder: darken($headerBg, 5%);
+$headerShadow: rgba(255, 255, 255, 0);
+
+$headerTop: #3A3A3A; 
+$headerTopBorder: $borderColor;
+$userToolsColor: #B3AB96;
+$userToolsIcon: #C1AF8B;
+
+$mobileMenuBg: #ffffff;
+$menuBorder: darken(#ffffff, 4%);
+$mobileLinks: #6D6D6D;
+
+$subNavLinkColor: lighten($navLinkColor, 3%);
+$subNavLinkHover: lighten($navLinkColor, 3%); 
+
+$subNavBgSolidColor: #ffffff; 
+$subNavBgColor: #ffffff; 
+$subNavBorder: #f1f1f1;
+
+$subMenuSolidColor: #fff;
+$subMenuBg: rgba(255, 255, 255, 0.73);
+$subMenuBorder: $borderColor;
+$subMenuColor: #555;
+
+$footerBg:  #272727;
+$footerBorder: #403D38;
+$footerHeaderColor: #B3AB96;
+$footerFontColor: #676359;
+$footerLink: #676359;
+$footerLinkHover: #928D80;
+$footerCopyright: #524F47;

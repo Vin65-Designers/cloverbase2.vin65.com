@@ -1,0 +1,372 @@
+/* ----- a. Main Menu ----- */
+.mainMenu{
+	@include boxSizing;
+	font-size: 15px;
+	font-family: $fontFamily;
+
+	@media screen and (min-width: 951px){
+		float: right;
+		margin-left: auto;
+	}
+
+	@media screen and (max-width: 950px){
+		@include transition;
+		background: $mobileMenuBg;
+		border-left: 1px solid $menuBorder;
+		max-height: 87%;
+		max-height: -moz-calc(100% - 146px);
+		max-height: -webkit-calc(100% - 146px);
+		max-height: calc(100% - 146px);
+		height: 100%;
+		font-size: 16px;
+		position: fixed;
+		top: 146px;
+		right: -350px;
+		margin: 0;
+		overflow: auto;
+		width: 350px;
+		z-index: 100;
+	}
+
+	@media screen and (max-width: 580px){
+		top: 149px;
+		right: -100%;
+		max-height: -moz-calc(100% - 149px);
+		max-height: -webkit-calc(100% - 149px);
+		max-height: calc(100% - 149px);
+		width: 100%;
+	}
+
+	@media screen and (max-width: 500px){
+		top: 148px;
+		max-height: -moz-calc(100% - 148px);
+		max-height: -webkit-calc(100% - 148px);
+		max-height: calc(100% - 148px);
+	}
+
+	ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		text-align: left;
+
+		@media screen and (min-width: 951px){
+			float: right;
+		}
+
+		@media screen and (max-width: 950px){
+			text-align: left;
+		}
+
+		ul{
+			font-size: 14px;
+			text-align: left;
+
+			@media screen and (min-width: 951px){
+				background: $subNavBgColor;
+				border: 1px solid $subNavBorder;
+				// display: none;
+				visibility: hidden;
+  				opacity: 0;
+				padding: 8px 10px;
+				position: absolute;
+				left: -15px;
+				top: 110px;
+				width: 200px;
+				
+				-ms-transform: translateY(5px);
+				-moz-transform: translateY(5px);
+				-o-transform: translateY(5px);
+				-webkit-transform: translateY(5px);
+				transform: translateY(5px);
+			}
+
+			@media screen and (max-width: 950px){
+				text-align: left;
+			}
+
+			.v65-selected{
+
+			}
+		}
+	}
+
+	li{
+		display: inline-block;
+		padding: 0;
+		position: relative;
+
+		@media screen and (min-width: 1201px){
+			padding: 0 15px;
+			margin: 0;
+		}
+
+		@media screen and (min-width: 951px){
+			padding: 0 10px;
+			margin: 0;
+		}
+
+		@media screen and (max-width: 950px){
+			border-top: 1px solid $menuBorder;
+			margin: 0;
+			width: 100%;
+		}
+
+		&:first-child{
+			margin-left: 0;
+		}
+
+		// Drop Down
+		&:hover ul{
+			@media screen and (min-width: 951px){
+				// display: block;
+				@include transitionDelay;
+				visibility: visible;
+  				opacity: 1;
+  				-ms-transform: translateY(0px);
+  				-moz-transform: translateY(0px);
+  				-o-transform: translateY(0px);
+  				-webkit-transform: translateY(0px);
+  				transform: translateY(0px);
+			}
+		}
+
+		li{
+			display: block;
+			float: none;
+			margin: 0;
+			padding: 0;
+
+			@media screen and (max-width: 950px){
+				text-align: left;
+				padding: 0;
+				width: 100%;
+			}
+
+			a{
+				color: $subNavLinkColor;
+				display: block;
+				line-height: 1.5;
+				margin: 0;
+				padding: 5px 10px;
+				text-transform: none;
+
+				@media screen and (max-width: 950px){
+					padding: 10px 2% 10px 10%;
+					width: 88%;
+				}
+
+				&:hover{
+					color: $subNavLinkHover;
+				}
+
+				&:after {
+					@media screen and (max-width: 950px) {
+						content: "";
+					}	
+				}
+
+				@media screen and (max-width: 950px){
+					color: $mobileLinks;
+
+					&:hover {
+						color: $mobileLinks;
+					}
+				}
+			}
+		}
+	}
+
+	a{
+		// @include transition;
+		color: $navLinkColor;
+		display: inline-block;
+		margin: 0;
+		padding: 44px 0;
+		position: relative;
+		text-decoration: none;
+
+		@media screen and (max-width: 950px){
+			padding: 15px 2% 15px 6%;
+			margin: 0;
+			width: 92%;
+		}
+
+		&:hover, &:focus, &:active {
+			background: none;
+			color: $navLinkHover;
+			outline: none;
+			text-decoration: none;
+		}
+
+		&:after {
+			@media screen and (max-width: 950px) {
+				content: "\e095";
+				font-family: 'icomoon';
+				font-size: 0.9em;
+				position: absolute;
+				right: 10px;
+			}
+		}
+
+		@media screen and (max-width: 950px){
+			color: $mobileLinks;
+
+			&:hover {
+				color: $mobileLinks;
+			}
+		}
+	}
+
+	.v65-pageAParent{
+		// color: $navSelected;
+	}
+
+	.v65-home{
+		display: none;
+	}
+
+	.v65-selected{
+		// color: $navSelected;
+	}
+}
+
+// ====================================== //
+// Sub Menu //
+// ====================================== //
+.subMenu, .subSubMenu {
+	background: $subMenuSolidColor;
+	background: $subMenuBg;
+	border-top: 1px solid $subMenuBorder;
+	font-size: 15px;
+	font-family: $fontFamily;
+	position: relative;
+	margin: 0;
+	width: 100%;
+
+	@media screen and (max-width: 767px){
+		// display: none;
+		text-align: center;
+	}
+
+	ul{
+		list-style: none;
+		margin-bottom: 0;
+		padding: 0;
+
+		ul {
+			display: none;
+		}
+	}
+
+	li{
+		line-height: 1.4;
+		padding: 0;
+		display: inline-block;
+		padding: 12px 10px;
+
+		@media screen and (max-width: 767px){
+			// display: none;
+			display: inline-block;
+		}
+
+		ul{
+			margin-left: 10px;
+		}
+	}
+
+	a{
+		color: $subMenuColor;
+		line-height: 1.5;
+		width: 100%;
+
+		&:hover, &:focus, &:active {
+			color: $subMenuColor;
+		}
+	}
+}
+
+.subSubMenu {
+	background: $backgroundColor;
+	font-size: 14px;
+
+	@media screen and (max-width: 767px){
+		display: block;
+	}
+
+	li {
+		padding: 10px 8px;
+
+		@media screen and (max-width: 767px){
+			display: inline-block;
+			padding: 15px 10px;
+		}
+	}
+
+	a {
+		color: $fontColor;
+
+		&:hover, &:focus, &:active {
+			color: $fontColor;
+		}
+	}
+}
+
+.membersPages {
+	.subMenu {
+		li {
+			display: inline-block;
+
+			@media screen and (max-width: 950px){
+				line-height: 2;
+			}
+		}
+	}
+}
+
+// ====================================== //
+// Mobile Menu //
+// ====================================== //
+
+.icon-menu {
+	cursor: pointer;
+	font-size: 1.5em;
+    position: absolute;
+    top: 1.5em;
+    right: 1em;
+
+    &:hover, &:focus, &:active {
+    	color: $navLinkHover;
+    }
+
+    @media screen and (max-width: 580px){
+    	top: 1.7em;
+    }
+
+    @media screen and (min-width: 951px){
+    	display: none;
+    }
+}
+
+.menuOpen {
+	transform: translate(-350px, 0);
+	-webkit-transform: translate(-350px, 0);
+	-moz-transform: translate(-350px, 0);
+	-ms-transform: translate(-350px, 0);
+
+	@media screen and (max-width: 580px) {
+		transform: translate(-100%, 0);
+		-webkit-transform: translate(-100%, 0);
+		-moz-transform: translate(-100%, 0);
+		-ms-transform: translate(-100%, 0);
+	}
+}
+
+.mobileBody {
+	position: fixed;
+}
+
+.flex-container{
+  display:flex;
+}

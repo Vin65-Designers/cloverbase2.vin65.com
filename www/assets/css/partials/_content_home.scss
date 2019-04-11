@@ -1,0 +1,584 @@
+
+
+// ====================================== //
+// Homepage Gallery
+// ====================================== //
+.homepageHeader {
+	overflow: hidden;
+	background-color: #332F32;
+
+	@media screen and (max-width: 850px){
+		min-height: 300px;
+	}
+
+	@media screen and (min-height: 851px){
+		min-height: 600px;
+	}
+}
+
+.bx-wrapper {
+	position: absolute !important;
+	// position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+	.bx-controls {
+		@media screen and (max-width: 580px){
+			display: none;
+		}
+	}
+}
+
+.homepageGallery {
+	background: $headerBg;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+
+	.homepagePhoto {
+		-ms-behavior: url(backgroundsize.min.htc);
+		    behavior: url(backgroundsize.min.htc);
+		background:{
+			repeat: no-repeat;
+			position: center;
+			size: cover;
+		}
+		padding: 0;
+		list-style-type: none;
+		position: relative;
+		width: 100%;
+		height: 100%;
+
+		@media screen and (min-width: 769px){
+			background-attachment: fixed;
+		}
+
+		@media only screen and (device-width: 768px) {
+			background:{
+				size: initial;
+				attachment: inherit;
+			}
+		}
+
+		@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+			background:{
+				size: initial;
+				attachment: inherit;
+			}
+		}
+
+		@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+			background:{
+				size: initial;
+				attachment: inherit;
+			}
+		}
+	}
+}
+
+// ====================================== //
+// Gallery Content
+// ====================================== //
+
+.imagePreloader {
+	opacity: 0;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.imageVisible {
+	opacity: 1;
+}
+
+.galleryContent {
+	@include boxSizing;
+	font-size: 120%;
+	max-width: 950px;
+	margin: 0 auto;
+	padding: 8.5em 2em;
+	position: relative;
+	text-align: center;
+	width: 100%;
+	z-index: 1;
+
+	@media screen and (max-width: 1350px){
+		padding: 7.5em 2em;
+	}
+
+	@media screen and (max-width: 1280px){
+		padding: 6.5em 2em;
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1000px){
+		padding: 9.25em 5%;
+		width: 90%;
+	}
+
+	@media screen and (max-width: 450px){
+		padding: 4.5em 1em;
+	}
+
+	&.galleryFixed {
+		@media screen and (min-width: 1001px){
+			position: fixed;
+			top: initial;
+			left: 50%;
+			margin-left: -475px;
+		}
+	}
+
+	&.fadeIn {
+		-webkit-animation-name: fadeIn;
+		animation-name: fadeIn;	
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+		-webkit-animation-duration: 0.75s;
+		animation-duration: 0.75s;
+		-webkit-animation-delay: 1s;
+		-moz-animation-delay: 1s;
+		animation-delay: 1s;
+	}
+
+	h1, h2, h3, h4, h5, h6, p, a {
+		@include textShadow;
+		color: #fff;
+		margin-bottom: 0.25em;
+	}
+
+	p {
+		font-size: 90%;
+	}
+
+	@media screen and (min-width: 851px){
+		h1 {
+			font-size: 2.2em;
+		}
+
+		h2 {
+			font-size: 3em;
+		}
+
+		h3 {
+			font-size: 1.75em;
+		}
+	}
+
+	@media screen and (max-width: 850px){
+		h1 {
+			font-size: 1.9em;
+		}
+
+		h2 {
+			font-size: 1.9em;
+		}
+
+		h3 {
+			font-size: 1.5em;
+		}
+	}
+
+	@media screen and (max-width: 450px){
+		h1, h2, h3, h4, h5, h6 {
+			font-size: 1.5em;
+		}
+	}
+
+	a {
+		text-decoration: underline;
+	}
+}
+
+// ====================================== //
+// Homepage Content
+// ====================================== //
+
+.homepageContent {
+	background: $introBgImage;
+	border-top: $introBorderColor;
+	border-bottom: $introBorderColor;
+	float: left;
+	position: relative;
+	text-align: center;
+	width: 100%;
+	z-index: 10;
+ 
+	.wrapper {
+		max-width: 900px;
+		margin: 4em auto;
+	}
+}
+
+// ====================================== //
+// Homepage Banner
+// ====================================== //
+.homepageBanner {
+	@include boxSizing;
+	-ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);
+	background:{
+		position: center;
+		repeat: no-repeat;
+	}
+	font-size: 120%;
+	float: left;
+	padding: 12em 0;
+	min-height: 650px;
+	position: relative;
+	z-index: 2;
+	width: 100%;
+
+	@media screen and (min-width: 769px){
+		background:{
+			size: cover;
+			attachment: fixed;
+		}
+	}
+
+	@media only screen and (device-width: 768px) {
+		background:{
+			size: initial;
+			attachment: inherit;
+		}
+	}
+
+	@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+		background:{
+			size: initial;
+			attachment: inherit;
+		}
+	}
+
+	@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+		background:{
+			size: initial;
+			attachment: inherit;
+		}
+	}
+
+	.wrapper {
+		max-width: 800px;
+		position: relative;
+		z-index: 1;
+	}
+
+	h1, h2, h3, h4, h5, h6, p, a {
+		@include textShadow;
+		color: #fff;
+		margin-bottom: 0.25em;
+	}
+
+	p {
+		font-size: 90%;
+	}
+
+	@media screen and (min-width: 851px){
+		h1 {
+			font-size: 3em;
+		}
+
+		h2 {
+			font-size: 2em;
+		}
+
+		h3 {
+			font-size: 1.75em;
+		}
+	}
+
+	@media screen and (max-width: 850px){
+		h1 {
+			font-size: 1.9em;
+		}
+
+		h2 {
+			font-size: 1.75em;
+		}
+
+		h3 {
+			font-size: 1.5em;
+		}
+	}
+
+	@media screen and (max-width: 450px){
+		h1, h2, h3, h4, h5, h6 {
+			font-size: 1.5em;
+		}
+	}
+
+	a {
+		text-decoration: underline;
+	}
+}
+
+// ====================================== //
+// Homepage Sections
+// ====================================== //
+
+.homepageSections {
+	display: flex;
+    flex-wrap: wrap;
+	background: $introBgImage;
+	-ms-box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+	-o-box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+	-webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+	position: relative;
+	padding: 3em 5em;
+	z-index: 5;
+
+	@media screen and (max-width: 1450px){
+		padding: 3em 2em;
+	}
+
+	@media screen and (max-width: 1000px){
+		padding: 3em 1em;
+	}
+}
+
+.homepageSection {
+	@include boxSizing;
+	background:{
+		size: cover;
+		position: center;
+		repeat: no-repeat;
+	}
+	-ms-box-shadow: 1px 1px 4px rgba(47, 40, 30, 0.21);
+	-moz-box-shadow: 1px 1px 4px rgba(47, 40, 30, 0.21);
+	-o-box-shadow: 1px 1px 4px rgba(47, 40, 30, 0.21);
+	-webkit-box-shadow: 1px 1px 4px rgba(47, 40, 30, 0.21);
+	box-shadow: 1px 1px 4px rgba(47, 40, 30, 0.21);
+	border: 5px ridge $accentColor;
+	margin: 1%;
+	padding: 10em 0 7.5em;
+	position: relative;
+	text-align: center;
+	z-index: 2;
+	width: 100%;
+
+	@media screen and (max-width: 1200px){
+		padding: 6em 0 4em;
+	}
+
+	@media screen and (max-width: 875px){
+		float: none;
+		max-width: 500px;
+		width: 98%;    
+	}
+
+	&.width-half {
+		width: 48%;
+
+		@media screen and (max-width: 875px){
+			float: none;
+			max-width: 500px;
+			margin: 1.5em auto;
+			width: 98%;  
+		}
+	}
+
+	.overlay {
+		@include transitionSlow;
+	}
+
+	.wrapper {
+		max-width: 800px;
+		margin: 0 auto;
+		z-index: 1;
+		position: relative;
+	}
+
+	.homeIcon {
+		@include transition;
+		color: #fff;
+		border: 2px solid rgba(255, 255, 255, 0.7);
+		border-radius: 50%;
+		font-size: 2em;
+		padding: 10px;
+	}
+
+	h2, a {
+		@include textShadow;
+		color: #fff;
+	}
+
+	h2 {
+		padding-top: 1.2em;
+		font-size: 1.8em;
+	}
+
+	a {
+		text-decoration: underline;
+	}
+
+	&:hover, &:focus, &:active {
+		.overlay {
+			// background: rgba(0, 0, 0, 0.5);
+			background: rgba(2, 2, 2, 0.59);
+		}
+
+		.homeIcon {
+			border: 3px solid #fff;
+		}
+	}
+}
+
+.homepageSectionLink{
+  width: 31.33%;
+  margin: 1%;
+}
+
+@media screen and (max-width: 875px){
+  .homepageSectionLink {
+      float: none;
+      max-width: 500px;
+      margin: 0.75em auto;
+      width: 98%;
+  }
+}
+
+// ====================================== //
+// Homepage Product Group
+// ====================================== //
+
+.homepageProductGroup {
+	background: $backgroundColor;
+	position: relative;
+	z-index: 2;
+
+	.wrapper {
+		max-width: 1500px;
+		margin: 0 auto;
+	}
+
+	.v65-productGroup-title.v65-title,
+	.v65-productGroup-teaser {
+		display: none;
+	}
+
+	.v65-productGroup {
+		margin-bottom: 0;
+	}
+
+	.v65-productGroup-products {
+		.v65-productGroup-product {
+			width: 30.33%;
+			margin: 3em 0 3em 3%;
+
+			@media screen and (max-width: 1100px){
+				float: none;
+				margin: 2em auto;
+				max-width: 600px;
+				width: 100%;
+			}
+
+			@media screen and (max-width: 790px){
+				float: left;
+			}
+
+			.productPhoto {
+				float: right;
+				width: 28%;
+			}
+
+			.productDescription {
+				float: left;
+				margin: 0 4% 0 0;
+				text-align: left;
+				width: 68%;
+
+				.v65-title {
+					font-size: 1.15em;
+				}
+			}
+		}	
+	}
+}
+
+// ====================================== //
+// Homepage Bottom Content
+// ====================================== //
+.homepageBottomContent {
+	display: none;
+	background: $altBackgroundColor;
+	float: left;
+	width: 100%;
+}
+
+.homepageEvents {
+	float: left;
+    width: 42%;
+    margin-left: 8%;
+
+    .v65-event-upcoming-title {
+    	display: none;
+    }
+
+    .v65-event-upcoming-event {
+    	border-top: 1px solid $borderColor;
+    	border-bottom: 1px solid $borderColor;
+    	text-align: left;
+    	padding: 1.5em 0;
+    	position: relative;
+    	margin: 0;
+
+    	.event-arrow {
+    		@include transition;
+    		padding: 0 10px;
+    		position: absolute;
+    		right: 0;
+    		bottom: 32px;
+
+    		&:hover, &:focus, &:active {
+				transform: translateX(10px);
+    		}
+
+    		a {
+    			color: $buttonColor;	
+    		}
+    	}  
+
+    	.v65-event-upcoming-event-date {
+    		color: $accentColor;
+    		font:{
+				family: $headingFontFamily;
+				size: 0.9em;
+				weight: bold;
+    		}
+    		letter-spacing: 0.5px;
+    		text-transform: uppercase;
+    		margin-bottom: 1em;
+    		-webkit-font-smoothing: initial;
+    	}
+
+    	.v65-event-upcoming-event-title {
+    		font-size: 1.2em;
+    		display: block;
+    	}
+
+    	.v65-event-upcoming-event-time {
+    		display: block;
+    	}
+    }
+}
+
+// #slider{
+// 	height: 0;
+// 	padding-top: 37%;
+// 	overflow: hidden;
+// 	width: 100%;
+
+// 	.nivo-main-image{
+// 		position: absolute !important;
+// 	}
+// }

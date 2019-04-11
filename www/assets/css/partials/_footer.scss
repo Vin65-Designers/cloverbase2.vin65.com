@@ -1,0 +1,153 @@
+footer{
+	color: $footerLink;
+	background: $footerBg;
+	font-size: 17px;
+	float: left;
+	padding: 4em 0 0.5em;
+	position: relative;
+	z-index: 2;
+	width: 100%;
+
+	.footerSection {
+		float: left;
+		font-size: 0.9em;
+		margin-left: 3%;
+		width: 22.6%;
+
+		&:first-child {
+			@media screen and (min-width: 1051px){
+				margin-left: 0;
+			}
+		}
+
+		.v65-pod {
+			@media screen and (min-width: 581px) and (max-width: 1050px){
+				max-width: 250px;
+			}	
+		}
+
+		@media screen and (min-width: 750px) and (max-width: 1050px){
+			margin: 1em 2%;
+			width: 46%;
+		}
+
+		@media screen and (max-width: 750px){
+			margin: 0 0 1em;
+			width: 100%;
+		}
+
+		h2 {
+			color: $footerHeaderColor;
+			border-bottom: 1px solid $footerBorder;
+			font-size: 1.1em;
+			letter-spacing: 0.3px;
+			padding-bottom: 9px;
+		}
+
+		h2, p, nav, li, .v65-socialMediaLinks {
+			text-align: left;
+
+			@media screen and (max-width: 580px){
+				text-align: center;
+			}
+		}
+	}
+
+	nav {
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			list-style-type: none;
+			padding: 0;
+
+			@media screen and (max-width: 767px){
+				line-height: 30px;
+			}
+
+			a {
+				color: $footerLink;
+				font-size: 15px;
+				display: inline-block;
+				position: relative;
+
+				&:hover{
+					color: $footerLinkHover;
+				}
+
+				@media screen and (max-width: 767px){
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	a {
+		color: $footerLink;
+	}
+
+	.v65-socialMediaLinks {
+		padding: 0;
+		margin: 0;
+
+		li {
+			color: $footerLink;
+			display: inline-block;
+			list-style-type: none;
+			margin-right: 15px;
+			padding: 0;
+			width: 8%;
+
+			a {
+				color: $footerLink;
+				font-size: 1.4em;
+				padding: 18px 0;
+
+				&:hover, &:focus, &:active {
+					color: $footerLinkHover;
+				}
+			}
+		}
+	}
+
+	.lowerFooter {
+		float: left;
+		margin-top: 2em;
+		width: 100%;
+	}
+
+	.copyright {
+		color: $footerCopyright;
+		display: block;
+		clear: left;
+		font-size: 0.75em;
+		line-height: 2;
+
+		a {
+			color: $footerCopyright;
+		}
+
+		@media screen and (min-width: 768px){
+			float: left;
+			display: inline-block;
+		}
+	}
+}
+
+// ====================================== //
+// Subscribe Section
+// ====================================== //
+
+#v65-subscribeWidget input {
+	@media screen and (min-width: 551px){
+		width: 250px;
+	}
+}
+
+#v65-subscribeWidget .icon-email {
+	padding: 0 6px 0 0;
+    float: left;
+    font-size: 1em;
+}

@@ -1,0 +1,151 @@
+
+// ============================================ //
+// Global Variables //
+// ============================================ //
+
+$karla: 'Karla', sans-serif;
+$prata: 'Prata', serif;
+$cookie: 'Cookie', cursive;
+
+$fontFamily: $karla;
+$headingFontFamily: $prata;
+$accentFont: $cookie;
+
+
+// ============================================= //
+// Colors //
+// ============================================ //
+
+$white: #fff;
+$black: #000;
+$lightGrey: #EAEAEA;
+
+$cream: #F2EFED;
+$gold: #ABA07A;
+
+$darkGrey: #212121;
+$red: #9C1B1B;
+
+$offWhite: #F9F9F9;
+$blue: #3B5673;
+$darkBlue: #2F353A;
+
+$brown: #332F2C;
+$darkBrown: #2B2521;
+$green: #5F794C;
+// $green: #4C674C;
+
+// ============================================ //
+// General //
+// ============================================ //
+
+$headingFontColor: $brown;
+$headerFontColorHover: #252525;
+
+$fontColor: #6d6d6d;
+
+$leftNavSelected: $black;
+
+$altButtonColor: #B1B1B1;
+$altButtonHover: darken($altButtonColor, 5%);
+
+$accentColor: $gold;
+
+
+// ============================================ //
+// Theme Colors //
+// ============================================ //
+
+@import 'themes/themeSettings_brown';
+// @import 'themes/themeSettings_black';
+// @import 'themes/themeSettings_white';
+
+// ============================================ //
+
+.transition {
+	-ms-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+@mixin gradient($color1, $color2){
+	background-color: $color1;
+	background-image: -webkit-linear-gradient(top, $color1, $color2);
+	background-image: -moz-linear-gradient(top, $color1, $color2);
+	background-image: -ms-linear-gradient(top, $color1, $color2);
+	background-image: -o-linear-gradient(top, $color1, $color2);
+	background-image: linear-gradient(top, $color1, $color2);
+}
+
+@mixin boxSizing{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+@mixin transition{
+	-ms-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+@mixin textShadow{ 
+	-ms-text-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+	-moz-text-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+	-o-text-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+	-webkit-text-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+	text-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+}
+
+@mixin transitionSlow{
+	-ms-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+
+@mixin transitionDelay{
+	-ms-transition-delay: 0.2s;
+	-moz-transition-delay: 0.2s;
+	-o-transition-delay: 0.2s;
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+@mixin boxShadow {
+	-ms-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+	-o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+.hideText{
+	overflow:hidden;
+	text-indent:100%;
+	white-space:nowrap;
+	
+	a{
+		display:block;
+		height:100%;
+		text-indent: 101%;
+	}
+}
+
+.icon-arrow-left, .icon-arrow-right{
+  font-size:1em;
+  padding:0;
+}
+
+.icon-arrow-up{
+  padding: 0;
+  font-size: 0.95em;
+  height: 1.3em;
+  line-height: 1.3;
+
+}

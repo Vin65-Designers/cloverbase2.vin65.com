@@ -1,0 +1,294 @@
+#v65-modalContentHeader{
+	background: $headingFontColor;
+}
+
+	.content {
+		@media screen and (max-width: 767px){
+			padding: 2em 0 0;
+		}
+		
+		@media screen and (min-width: 768px){
+			padding: 4em 0 0;
+		}
+	}
+
+	.pageContent, .wideContent {
+		@media screen and (max-width: 767px){
+			padding-bottom: 2em;
+		}
+		
+		@media screen and (min-width: 768px){
+			padding-bottom: 4em;
+		}
+	}
+
+	.productDrilldownContent {
+		padding-bottom: 0;
+	}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 5%;
+	position: relative;
+	width: 90%;
+
+	@media screen and (max-width: 580px){
+		padding: 0 2.5%;
+		width: 95%;
+	}
+}
+
+.overlay {
+	background: #00000066;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+
+	&.overlayNo {
+		background: transparent;
+	}
+}
+
+.pageTop {
+	position: relative;
+	z-index: 2;
+}
+
+// ====================================== //
+// Tuesday by Shakr
+// ====================================== //
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+    -webkit-animation-timing-function: cubic-bezier(0, 0.59, 0.375, 1);
+            animation-timing-function: cubic-bezier(0, 0.59, 0.375, 1);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+    -webkit-animation-timing-function: cubic-bezier(0, 0.59, 0.375, 1);
+            animation-timing-function: cubic-bezier(0, 0.59, 0.375, 1);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+// ====================================== //
+// Forms
+// ====================================== //
+
+input[type='text'], input[type='password'], input[type='username'], input[type='tel'], input[type='email'], textarea, input[type='number'] {
+	@include boxSizing;
+	border-radius: 3px;
+	@include transition;
+    border: 1px solid #D8D8D8;
+    font-size: 0.9em;
+
+    @media screen and (min-width: 581px){
+		height: 2.9em;
+		line-height: 2.9em;
+    }
+
+    &:focus {
+    	background-color: #FBFBFB;
+    	border-color: #CECECE;
+    	outline: none;
+    }
+}
+
+input[type='number'] {
+	padding: 0.75em 0.5em;
+
+	@media screen and (min-width: 581px) {
+		height: 2.9em;
+		line-height: 2.9em;
+	}
+
+	@media screen and (max-width: 580px){
+		height: 4em;
+		line-height: 4em;
+		min-width: 3em;
+	}
+}
+
+fieldset#v65-fieldset-choices {
+	width: 360px;
+
+	@media screen and (max-width: 950px){
+		width: 50%;
+	}
+
+	@media screen and (max-width: 725px){
+		width: 98%;
+	}
+}
+
+.v65-form textarea, .v65-form select {
+	font-family: $fontFamily;
+	font-size: 0.8em;
+}
+
+#v65-memberFormWrapper {
+	margin: 0 auto;
+
+	form {
+		max-width: 400px;
+	}
+
+	legend {
+		text-align: center;
+	}
+}
+
+.v65-form, #v65-memberFormWrapper  {
+	max-width: 420px;
+	width: 100%;
+
+	legend {
+		color: $headingFontColor;
+		font-family: $headingFontFamily;
+		letter-spacing: 0;
+		padding: 0 0 6px;
+	}
+
+    fieldset {
+        border: 0;
+        padding: 0;
+
+        div {
+        	padding: 5px 0;
+        }
+    }
+
+    label {
+		padding-bottom: 2px;
+	}
+
+    input[type=text], input[type=password], input[type='username'], textarea, input[type='number'] {
+    	width: 100% !important;
+    }
+}
+
+#v65-commentFormWrapper #Comments {
+	width: 100%;
+
+	&:focus {
+		background: #FDFDFD;
+		outline: none;
+	}
+}
+
+#v65-checkBilling,
+#v65-memberFormWrapper {
+	legend {
+		color: $headingFontColor;
+		font-family: $headingFontFamily;
+		font-size: 1.7em;
+		letter-spacing: 0;
+		padding: 0 0 6px;
+	}
+
+	input[name=BillFirstName], input[name=BillLastName],
+	input[name=BillCompany], input[name=BillCity],
+	input[name=BillMainPhone], input[name=BillEmail],
+	input[name=BillAddress], input[name=BillAddress2],
+	textarea[name=OrderNotes], input[name=NickName],
+	input[name=ShipFirstName], input[name=ShipLastName],
+	input[name=ShipCompany], input[name=ShipCity],
+	input[name=ShipMainPhone], input[name=ShipEmail],
+	textarea[name=giftMessage], input[name=ShipAddress],
+	input[name=ShipAddress2],
+	input[name=FirstName], input[name=LastName],
+	input[name=Company], input[name=City],
+	input[name=MainPhone], input[name=Email], 
+	input[name=Username], input[name=Password],
+	input[name=ConfirmPassword], input[name=Address2],
+	input[name=Address], input[name=shipMainPhone], input[name=shipEmail] {
+		@include boxSizing;
+		width: 100% !important;
+	}
+
+	select[name=BillBirthDay], select[name=BillBirthYear],
+	select[name=BirthDay], select[name=BirthYear],
+	select[name=ShipBirthDay], select[name=ShipBirthYear] {
+		@media screen and (min-width: 581px){
+			width: 80px;
+		}
+		@media screen and (max-width: 580px){
+			width: 28%;
+		}
+	}
+
+	select[name=BillBirthMonth], select[name=BirthMonth], select[name=ShipBirthMonth] {
+		@media screen and (min-width: 581px){
+			width: 100px;
+		}
+		@media screen and (max-width: 580px){
+			width: 38%;
+		}
+	}
+
+	select[name=BillStateCode] {
+		@media screen and (max-width: 580px){
+			width: 100%;
+		}
+	}
+} 
+
+// Member Forms //
+#v65-memberAddressBook {
+	th {
+		background-color: transparent;
+	}
+
+	tr:hover, tr:focus, tr:active {
+		background-color: #eee;
+	}
+}
+
+// ====================================== //
+// BX Slider
+// ====================================== //
+
+/* ----- a. Homepage Styles ----- */
+@import 'content_home';
+
+/* ----- b. Page Styles ----- */
+@import 'content_page';
+
+/* ----- c. Store Styles ----- */
+@import 'content_store';

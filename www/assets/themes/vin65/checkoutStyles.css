@@ -1,0 +1,238 @@
+
+
+	
+	body {
+		background-color: #f2efed;
+	}
+	
+	
+	header {
+		background-color: #f2efed;
+	}
+	
+	
+	footer {
+		background-color: #332f2c;
+	}
+	
+	
+	section, .v65-tooltipWrapper .v65-tooltip, .v65-orderSummary, .v65-clubSummary {
+		background-color: #f2efed;
+	}
+	.v65-tooltipWrapper .v65-tooltip:after {
+		border-top-color: #f2efed;
+	}
+	
+	.v65-loading {
+		background: #f2efed;
+		opacity: 0.5;
+	}
+	.v65-checkout .v65-accessPoints .v65-accessPoint:not(.selected) .v65-accessPointHours:after { 
+		background-image: linear-gradient(to bottom, rgba(242,239,237,0), #f2efed)
+	}
+	
+	.v65-modal {
+		background: #f2efed;
+	}
+	
+	
+	h1, h2, h3, h4, h5, h6,
+	.v65-sectionTitle, 
+	div.v65-checkoutPreview .v65-checkoutPreviewLabel {
+		color: #332f2c;
+		font-family: Playfair Display;
+	}
+	
+	
+	body, label,
+	.v65-customForm,
+	input[type=checkbox] + label,
+	.v65-checkout .v65-tab,
+	.v65-checkout .v65-tab label,
+	.v65-checkout .v65-tab .v65-labelDescription,
+	.v65-checkout .v65-paymentInformation .v65-paymentMethod .v65-cardNumber,
+	.v65-checkout .v65-paymentInformation .v65-paymentMethod .v65-giftCard,
+	.v65-checkout .v65-tooltip,
+	.v65-checkoutCart .v65-itemTitle a,
+	.v65-cartSummary .v65-total .v65-total-label,
+	.v65-orderSummary .v65-total-label,
+	.v65-orderSummary .v65-meta a,
+	.v65-clubSummary .v65-meta a,
+	.v65-orderSummary .v65-totalPrice,
+	.v65-clubSummary .v65-totalPrice {
+		color: #8a8a8a;
+		font-family: Karla;
+	}
+	
+	.v65-modal .v65-modalBar .v65-modalClose:before, .v65-modal .v65-modalBar .v65-modalClose:after {
+		background-color: #8a8a8a;
+	}
+	
+	.ui-widget {
+		font-family: Karla !important;
+	}
+	
+	
+	.v65-orderSummary .v65-skuPrice .v65-price,
+	.v65-clubSummary .v65-skuPrice .v65-price,
+	.v65-orderSummary .v65-skuPrice .v65-quantity,
+	.v65-clubSummary .v65-skuPrice .v65-quantity,
+	.v65-cartSummary .v65-deposit,
+	.v65-cartSummary .v65-subtotal,
+	.v65-cartSummary .v65-loyaltyPoints,
+	.v65-cartSummary .v65-shipping,
+	.v65-cartSummary .v65-handling,
+	.v65-cartSummary .v65-taxes,
+	.v65-cartSummary .v65-payment,
+	.v65-cartSummary .v65-coupon,
+	.v65-cartSummary .v65-total-label,
+	.v65-couponSummary .v65-total-label,
+	.v65-applyCoupon .v65-coupon,
+	.v65-applyCoupon .v65-total,
+	.v65-receiptPage .v65-orderSummary .v65-total-label,
+	.v65-checkoutCart .v65-gridRowHeader,
+	.v65-checkoutCart .v65-allocationWishList .v65-allocationWishListItem .v65-itemQuantity,
+	.v65-checkout .v65-paymentInformation .v65-paymentMethod,
+	.v65-checkout .v65-accessPoints .v65-accessPoint .v65-accessPointHours table,
+	.v65-checkout .v65-accessPoints .v65-accessPoint .v65-accessPointDistance {
+		color: #b3b3b3;
+	}
+	
+	
+	a,
+	.v65-actionLink,
+	.v65-actionLink-Button,
+	.v65-checkout .v65-shippingInformation .v65-addNewShippingAddress,
+	.v65-checkout .v65-billingInformation .v65-addNewCreditCard,
+	.v65-orderSummary .v65-editCart,
+	.v65-checkout .v65-shippingInformation .v65-editShipContact,
+	.v65-checkout .v65-shippingInformation .v65-editShippingOptions,
+	.v65-checkout .v65-shippingInformation .v65-editUserChoice,
+	.v65-checkout .v65-shippingOptions .v65-editShipContact,
+	.v65-checkout .v65-shippingOptions .v65-editShippingOptions,
+	.v65-checkout .v65-shippingOptions .v65-editUserChoice,
+	.v65-checkout .v65-billingInformation .v65-editShipContact,
+	.v65-checkout .v65-billingInformation .v65-editShippingOptions,
+	.v65-checkout .v65-billingInformation .v65-editUserChoice,
+	.v65-checkout .v65-billingInformation .v65-viewBillingAddress .v65-editBillingAddressBtn,
+	.v65-checkout .v65-loginDetails v65-viewLoginDetails .v65-editLoginDetailsBtn,
+	.v65-checkout .v65-userChoiceInformation .v65-editShipContact,
+	.v65-checkout .v65-userChoiceInformation .v65-editShippingOptions,
+	.v65-checkout .v65-userChoiceInformation .v65-editUserChoice {
+		color: #aba07a;
+		border-color: #aba07a;
+	}
+
+	
+	.v65-mainNav li a,
+	.v65-subNav li a,
+	.v65-subNav li a:hover,
+	.v65-subNav li a:focus {
+		color: #8a8a8a;
+		font-family: Karla;
+	}
+	
+	
+	.v65-footerNav li a,
+	.v65-footerLegal .v65-copyright,
+	.v65-footerLegal .v65-vin65Accolade a {
+		color: #b1afa4;
+		font-family: Karla;
+	}
+	
+	
+	.ui-datepicker,
+	.v65-orderSummary,
+	.v65-clubSummary,
+	.v65-checkoutCart .v65-gridRowHeader,
+	.v65-checkoutCart .v65-cartItem,
+	.v65-cartSummary,
+	.v65-applyCoupon form,
+	.v65-couponSummary,
+	.v65-couponSummaryLine,
+	.v65-shippingInformation,
+	.v65-shippingOptions,
+	.v65-billingInformation,
+	.v65-userChoiceInformation,
+	.v65-tab:not(.selected),
+	.v65-mainNav li ul,
+	.v65-subNav li,
+	#v65-printReceipt table,
+	#v65-printReceipt table tbody,
+	.v65-orderSummary .v65-cartItem,
+	.v65-clubSummary .v65-cartItem,
+	.v65-checkout .v65-shippingInformation,
+	.v65-checkout .v65-shippingOptions,
+	.v65-checkout .v65-billingInformation,
+	.v65-checkout .v65-userChoiceInformation,
+	.v65-checkout .v65-loginDetails,
+	.v65-tooltipWrapper .v65-tooltip,
+	.v65-receiptPage .v65-receipt,
+	.v65-primeContent,
+	.v65-loyaltyPointsContent,
+	.v65-total-summary {
+		border-color: #dcd9d7;
+	}
+	
+	.v65-checkout .v65-tooltip:before {
+		border-top-color: #dcd9d7;
+	}
+	
+	@media screen and (min-width: 961px) {
+		.v65-checkout {
+			border-color: #dcd9d7;
+		}
+	}
+
+	
+	input[type=text]:focus,
+	input[type=email]:focus,
+	input[type=tel]:focus,
+	input[type=password]:focus,
+	input[type=number]:focus,
+	input[type=username]:focus,
+	textarea:focus {
+		border-color: #9a9897;
+	}
+	
+	
+	.button, button, .buttonLarge, buttonLarge {
+		background: #5f794c;
+		color: #ffffff;
+	}
+	
+	
+	.button:hover, button:hover, .buttonLarge:hover, buttonLarge:hover {
+		background: #516741;
+	}
+	
+	
+	.buttonAlt, buttonAlt, .v65-orderSummary .buttonAlt.v65-editCart {
+		background: #919191;
+		color: #ffffff;
+	}
+	
+	
+	.buttonAlt:hover, buttonAlt:hover {
+		background: #7b7b7b;
+	}
+	
+	@media screen and (max-width: 33.75em) {
+		.v65-actionLink-Button {
+			background: #919191;
+			color: #ffffff;
+		}
+		
+		.v65-actionLink-Button:hover {
+			background: #7b7b7b;
+		}
+	}
+	
+	
+	.v65-checkout .v65-paymentInformation .v65-creditCardBlock {
+		background: #e8e5e3;
+		border-color: #c5c3c1;
+	}
+	
+	
+	

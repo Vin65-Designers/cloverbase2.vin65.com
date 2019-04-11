@@ -1,0 +1,296 @@
+header.primary{
+	background: $headerBg;
+	font-family: $fontFamily;
+	position: relative;
+	width: 100%;
+	z-index: 15;
+
+	.wrapper {
+		position: relative;
+		display: flex;
+
+		@media screen and (max-width: 1100px){
+			padding: 0 3%;
+			width: 94%;
+		}
+
+		@media screen and (max-width: 580px){
+			width: 100%;
+			padding: 0;
+			margin: 0;
+		}
+	}
+
+	.headerIcon {
+		font-size: 1.4em;
+	    vertical-align: middle;
+	    margin-top: -2px;
+	    display: inline-block;
+	}
+
+	.socialIcons {
+		float: right; 
+		padding: 0;
+		margin: 5px 30px 5px 10px;
+
+		@media screen and (max-width: 580px){
+			display: none;
+		}
+
+		li {
+			color: $userToolsIcon;
+			list-style-type: none;
+			display: inline-block;
+			font-size: 0.75em;
+			padding: 0 5px;
+
+			a {
+				color: $userToolsIcon;
+			}
+		}
+	}
+
+	.headerTop {
+		background: $headerTop;
+		border-bottom: 1px solid $headerTopBorder;
+
+		.telephoneNumber {
+			color:  $userToolsColor;
+		    font-size: 14px;
+		    height: 2em;
+		    line-height: 2em;
+			margin: 3px 0em 3px 40px;
+
+			@media screen and (max-width: 950px){
+				margin-top: 0;
+				height: 2.5em;
+				line-height: 2.5em;
+			}
+
+			@media screen and (max-width: 700px){
+				display: none;
+			}
+
+			a {
+				color:  #96958d;
+			}
+
+			span {
+				color: $userToolsIcon;
+				display: inline-block;
+				font-size: 14px;
+  				padding: 0;
+			}
+		}
+	}
+
+	&.checkoutHeader {
+
+		.v65-logo {
+			float: none;
+			margin: 0.5em auto;
+		}
+	}
+}
+
+.user-tools {
+	font-family: $fontFamily;
+	font-size: 14px;
+
+	@media screen and (min-width: 581px){
+		float: right;
+		height: 2em;
+		line-height: 2em;
+		margin-top: 2px;
+		width: initial;
+		position: static;
+		margin-left:auto;	
+	}
+
+	@media screen and (min-width: 581px) and (max-width: 950px){
+		margin: 3px 0 7px;
+	}
+
+	@media screen and (max-width: 580px){
+		height: 3em;
+		line-height: 3em;
+		width: 100%;
+	}
+
+	&.cartNav {
+		// @include transition;
+		margin: 38px 0 0 20px;
+		height: 2.5em;
+		line-height: 2.5em;
+
+		#v65-modalCart > a {
+			color: $navLinkColor;
+			font-size: 15px;
+
+			&:hover, &:focus, &:active {
+				color: $navLinkHover;
+			}
+		}	
+
+		@media screen and (max-width: 950px){
+			display: none;
+		}
+	}
+
+	a {
+		color:  #96958d;
+	}
+
+	.icon-person {
+		margin-right: 5px;
+	}
+
+	.icon-person, .icon-cart {
+		color: $userToolsIcon;
+		width: 15px;
+		display: inline-block;
+		font-size: 15px;
+  		padding: 0;
+	}
+
+	.v65-yourAccount, .v65-editProfile,
+	.v65-login, .v65-logout {
+		border: 0;
+		
+		@media screen and (min-width: 581px){
+			position: static;
+			width: auto;
+			width: initial;
+		}
+
+		@media screen and (min-width: 581px) {
+			margin-top: 1px;
+			height: 2em;
+    		line-height: 2em;
+		}
+
+		@media screen and (max-width: 580px){
+			height: 3em;
+			line-height: 3em;
+		}
+	}
+
+	.v65-login, .v65-logout {
+		@media screen and (min-width: 581px){
+			margin-left: 20px;
+		}
+
+		@media screen and (min-width: 581px) and (max-width: 950px){
+			margin-right: 20px;
+		}
+	}
+
+	.v65-editProfile {
+		@media screen and (min-width: 951px){
+			margin-left: 0;
+			margin-right: 0;
+			padding-right: 0;
+		}
+
+		@media screen and (min-width: 581px) and (max-width: 950px){
+			margin-right: 0;
+			padding-right: 0;
+		}
+	}
+
+	.v65-yourAccount {
+		@media screen and (min-width: 581px){
+			display: none;
+		}
+	}
+
+	.v65-pointsBalance {
+		display: inline-block;
+		padding-right: 1em;
+
+		@media screen and (max-width: 580px){
+			display: none;
+		}
+	}
+
+	#v65-modalCart {
+		@media screen and (min-width: 581px){
+			float: right; 
+			position: relative;
+		}
+
+		@media screen and (min-width: 581px) and (max-width: 950px){
+			height: 2.2em;
+			line-height: 2.2em;
+		}
+
+		@media screen and (max-width: 580px){
+			height: 3em;
+			line-height: 3em;
+		}
+
+		#v65-toggleModalCart {
+			@media screen and (max-width: 580px){
+				display: block;
+				float: right;
+				margin-right: 1%;
+			}
+
+			@media screen and (max-width: 580px){
+				line-height: 3em;
+				height: 3em;
+			}
+		}
+	}
+
+	#v65-modalCartDropdown {
+		@media screen and (min-width: 951px){
+			top: 5.1em;
+		}
+		
+		@media screen and (min-width: 581px) and (max-width: 950px){
+			top: 2.5em;
+		}
+	}
+
+	.v65-additionalItemsMessage a {
+		color: #000;
+	}
+}
+
+.v65-logo{
+	@include transition;
+	background:{
+		position: top center !important;
+	}
+	display: block;
+	float: left;
+	height: 80px;
+	width: 220px;
+	margin: 0.7em;
+	overflow: visible !important;
+}
+
+.v65-logo a{
+    color: transparent;
+    font-size: 0;
+    display: block;
+    height: 100%;
+
+
+	@media screen and (max-width: 580px){
+		margin: 0.7em !important;
+	}
+
+	@media screen and (max-width: 430px){
+		float: left;
+		 margin: 0.7em 0 0.7em !important;
+	}
+
+}
+
+#v65-modalContentHeader a.modalLinkBtn {
+	@media screen and (max-width:580px){
+		text-align: right;
+	}
+}

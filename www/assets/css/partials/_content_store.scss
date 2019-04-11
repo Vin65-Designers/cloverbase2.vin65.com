@@ -1,0 +1,1192 @@
+#v65-fieldset-wholesalerInfo, #v65-fieldset-billingInfo, 
+#v65-fieldset-shippingOptions, #v65-fieldset-shippingInfo, 
+#v65-fieldset-paymentMethod, #v65-fieldset-sourceCode, 
+#v65-fieldset-usernamePassword{
+	@media screen and (max-width: 725px){
+		width: 98%;
+	}
+}
+
+.print{
+	@media screen and (max-width: 720px){
+		margin: 0 10px;
+	}
+}
+
+.dotted {
+	display: none;
+}
+
+// ============================================ //
+// Product Groups //
+// ============================================ //
+
+.v65-productGroup-teaser {
+	max-width: 600px;
+	margin: 0 auto 3em;
+	text-align: center;
+	width: 100%;
+}
+
+.v65-productGroup{
+	.v65-clear{
+		@media screen and (max-width: 750px){
+			display: none;
+		}
+
+		&.productGroup-2Up-rowClear{
+			display: none;
+
+			@media screen and (min-width:581px) and (max-width: 599px){
+				display: block;
+			}
+		}
+
+		&.productGroup-3Up-rowClear{
+			display: none;
+		}
+	}
+
+	.v65-product-title.v65-title {
+		font-size: 1.15em;
+	}
+
+	.v65-subtitle {
+		font-size: 1.6em;
+	}
+}
+
+.v65-productGroup-product {
+	@media screen and (min-width: 580px) and (max-width: 1000px){
+		width: 48%;
+	}
+
+	.v65-product-addToCart-priceWrapper {
+		margin-bottom: 20px;
+	}
+
+	.v65-product-teaser {
+		font-size: 93%;
+	}
+
+	.v65-product-reviewStats {
+		height: initial;
+	}
+}
+
+
+
+// ============================================ //
+// Wine Clubs //
+// ============================================ //
+
+#v65-clubFormWrapper form {
+	.v65-clubChoice {
+		line-height: 1.5;
+	}
+}
+
+.v65-club {
+	@include boxSizing;
+	border: 5px ridge $accentColor;
+	float: left;
+	margin: 1em 2%;
+	padding: 30px 2% 10px;
+	width: 46%;
+
+	@media screen and (max-width: 940px){
+		margin: 1em 0;
+		padding: 30px 5% 10px;
+		width: 100%;
+	}
+
+	.v65-clubTeaser {
+		border-bottom: 0;
+		padding: 0;
+
+		p {
+			margin-bottom: 0.5em;
+		}
+	}
+
+	.v65-clubTitle {
+		font-size: 1.5em;
+		margin-bottom: 1em;
+	}
+	
+	.v65-clubJoin {
+		margin: 1em 0;
+	}
+
+}
+
+.club-one-third-center,
+.club-one-third-left {
+	.v65-club {
+		width: 31.33%;
+		margin: 1em 1%;
+
+		@media screen and (max-width: 940px){
+			margin: 1em 0;
+			width: 100%;
+		}
+	}
+}
+
+.club-half-center,
+.club-half-left {
+	.v65-club {
+		width: 46%;
+
+		@media screen and (max-width: 940px){
+			margin: 1em 0;
+			width: 100%;
+		}
+	}
+}
+
+.club-full-center,
+.club-full-left {
+	.v65-club {
+		float: none;
+		margin: 1em auto;
+		max-width: 950px;
+		width: 100%;
+	}
+}
+
+.club-one-third-center .v65-club,
+.club-half-center .v65-club,
+.club-full-center .v65-club {
+	text-align: center;
+
+	li {
+		list-style-position: inline;
+	}
+}
+
+.club-full-left .v65-club {
+	max-width: initial;
+}
+
+.v65-clubSignUp-Teaser {
+	display: none;
+}
+
+// ============================================ //
+// General List Page //
+// ============================================ //
+
+.v65-product-actionMessage,
+.v65-product-reviewStats {
+	margin-bottom: 0.5em;
+}
+
+.v65-product-addToCart-price {
+	color: $headingFontColor;
+	font-size: 0.9em;
+}
+
+.v65-product-addToCart-unitDescription {
+	color: $fontColor;
+	bottom: 0;
+	font-size: 0.9em;
+}
+
+.v65-paging,
+.v65-pagingBottom {
+	border: 0;
+}
+
+.v65-product-inventoryMessage {
+	color: #666;
+}
+
+.v65-product-availability {
+	color: #B7B7B7;
+	margin-bottom: 1em;
+}
+
+.v65-product-teaser {
+	margin-top: 1em;
+	margin-bottom: 1em;
+
+	p {
+		margin-bottom: 0;
+	}
+}
+
+.v65-product-description {
+	max-width: 750px;
+	margin: 0 auto 1.5em;
+	text-align: left;
+}
+
+.v65-product-description p,
+.v65-product-teaser p {
+	margin-bottom: 0.5em;
+}
+
+// ============================================ //
+// Product List //
+// ============================================ //
+
+.v65-productList {
+	th {
+		background: transparent;
+		border-color: darken($backgroundColor, 4%);
+		font:{
+			family: $headingFontFamily;
+			weight: normal;
+			size: 1.2em;
+		}
+	}
+
+	tr {
+		&:hover {
+			background: darken($backgroundColor, 4%);
+		}
+
+		&.alternatRow {
+			background: transparent;
+
+			&:hover {
+				background: darken($backgroundColor, 4%);
+			}
+		}
+	}
+
+	td {
+		border-color: darken($backgroundColor, 4%);
+	}
+}
+
+.v65-product1Up {
+	margin: 1.5em auto;
+	max-width: 750px;
+
+	.v65-product-photo {
+		@media screen and (max-width: 580px) {
+			margin-right: 4%;
+			width: 21%;
+		}
+	}
+}
+
+.v65-product2Up .v65-product-photo {
+	margin: 0 2%;
+}
+
+.v65-product1UpStore {
+	border-bottom: 1px solid darken($backgroundColor, 5%);
+	margin-bottom: 3em;
+	padding-bottom: 2em;
+
+	.v65-product-photo {
+		@media screen and (max-width: 580px) {
+			margin-right: 3%;
+			width: 16%;
+		}
+	}
+
+	.v65-product-infoWrapper,
+	.v65-product-commerceWrapper {
+		@media screen and (max-width: 580px) {
+			width: 81%;
+		}
+	}
+}
+
+.v65-product3Up {
+	@media screen and (max-width: 600px){
+		margin: 1em 0;
+		width: 100%;
+	}
+}
+
+.v65-product3Up .v65-product-addToCart-priceWrapper {
+	display: inline-block;
+}
+
+.v65-product2Up, .v65-product3Up, .v65-product5Up {
+	.v65-product-addToCart-priceWrapper {
+		margin-bottom: 0.75em;
+
+		@media screen and (max-width: 1275px){
+			display: block;
+		}
+	}
+}
+
+.v65-product2Up, .v65-product3Up, .v65-product5Up, .v65-product1Up, .v65-product1UpStore {
+	.v65-product-teaser {
+		font-size: 93%;
+	}
+}
+
+.v65-product-addToCart-priceWrapper {
+	font-family: $headingFontFamily;
+}
+
+// ============================================ //
+// Product Drilldown //
+// ============================================ //
+
+.v65-productWrapper {
+
+	@media screen and (max-width: 835px){
+		padding: 1em;
+	}
+
+	.v65-product-leftCol {
+		margin-top: 1em;
+	}
+
+	.v65-product-photo img {
+		@media screen and (max-width: 580px){
+			max-height: 350px;
+		}
+	}
+
+	h1 {
+		font-size: 3em;
+		float: none;
+		width: 100%;
+
+		@media screen and (max-width: 920px){
+			font-size: 2.25em;
+		}
+
+		@media screen and (max-width: 770px){
+			font-size: 2em;
+		}
+	}
+
+	.v65-product-subtitle {
+		font-size: 0.8em;
+		font-family: $accentFont;
+		text-transform: initial;
+		letter-spacing: 0;
+	}
+
+	.v65-product-addToCart .v65-addToCart {
+		border: 0;
+	}
+
+	.v65-product-rightCol {
+		text-align: center;
+	}
+
+	.v65-product-socialBar {
+		margin: 2.5em 0 1em;
+	}
+
+	.v65-socialMediaBar-Facebook, .v65-socialMediaBar-Twitter, .v65-socialMediaBar-GooglePlusOne,
+	.v65-socialMediaBar-Pinterest, .v65-socialMediaBar-ShareThis, .v65-socialMediaBar-Email,
+	.v65-socialMediaBar-FacebookLikeButton {
+		float: none;
+		display: inline-block;
+	}
+
+	.v65-product-reviewStats {
+		margin: 1.5em 0 0.5em;
+	}
+}
+
+.wineSpecs, .wineProfile {
+	border-bottom: 1px solid $borderColor;
+	max-width: 750px;
+	margin: 0 auto;
+	padding: 15px 0;
+	text-align: left;
+
+	.v65-wine-specs-title, .v65-wine-profile-title {
+		cursor: pointer;
+		font-size: 1.2em;
+		margin-left: 10px;
+		position: relative;
+
+		&:after {
+			content: "\e097";
+			color: $accentColor;
+			font-family: 'icomoon';
+			font-size: 0.7em;
+			position: absolute;
+			bottom: 3px;
+			right: 12px;
+		}
+	}
+
+	&.opened {
+		.v65-wine-specs-title, .v65-wine-profile-title {
+			&:after {
+				content: "\e096";
+			}
+		}
+	}
+
+	.v65-wine-specs, .v65-wine-profile {
+		margin-left: 10px;
+	}
+}
+
+.wineSpecs {
+	border-top: 1px solid $borderColor;
+	width: 100%;
+
+	@media screen and (max-width: 860px){
+		margin-right: 0;
+		width: 100%;
+	}
+
+	.v65-wine-specs .v65-product-attribute {
+		font-size: 1em;
+		margin: 0.5em 0;
+	}
+
+	.v65-product-attributeLabel {
+		color: $secondaryAccentColor;
+		display: inline-block;
+		font:{
+			family: $fontFamily;
+			size: 0.95em;
+			weight: normal;
+		}
+		float: none;
+		margin: 0 7px 0 0;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+		width: initial;
+	}
+
+	.v65-product-attributeValue {
+		display: inline-block;
+		float: none;
+		margin: 0;
+		width: initial;
+	}
+
+	.v65-wine-specs {
+		display: block;
+		display: none;
+		overflow: hidden;
+	}
+}
+
+.wineProfile {
+	width: 100%;
+
+	.v65-wine-profile {
+		display: block;
+		display: none;
+		overflow: hidden;
+		margin-bottom: 0;
+		
+		@media screen and (max-width: 860px){
+			width: 100%;
+		}
+
+		.v65-product-attribute {
+			margin: 0.75em 0;
+		}
+
+		.v65-product-attributeLabel {
+			color: $secondaryAccentColor;
+			font:{
+				family: $fontFamily;
+				size: 0.95em;
+				weight: normal;
+			}
+			letter-spacing: 0.5px;
+			margin-bottom: 0.5em;
+			text-transform: uppercase;
+			width: initial;
+		}
+	}
+}
+
+.bottomProductInfo {
+	background: $introBgImage;
+	border-top: $introBorderColor;
+	margin-top: 7em;
+}
+
+.productReviews {
+	float: left;
+	margin: 4em 0;
+	width: 100%;
+
+	@media screen and (max-width: 860px){
+		padding-top: 3em;
+	}	
+
+	.v65-ProductRating {
+		.v65-form legend {
+			font-size: 1.5em;
+		}
+	}
+
+	.v65-product-reviews {
+		.v65-product-review-wrapper {
+			border-color: $borderColor;
+			max-width: 650px;
+			margin: 3em auto 0;
+		}
+	}
+
+	.v65-product-reviews-title.v65-title {
+		font-size: 2em;
+		text-align: center;
+	}
+
+	.v65-ProductRating {
+		p {
+			text-align: center;
+		}
+
+		.v65-form {
+			margin: 3em auto 1em;
+
+			legend {
+				color: $secondaryAccentColor;
+				font:{
+					family: $fontFamily;
+					size: 1em;
+				}
+				letter-spacing: 0.5px;
+				text-transform: uppercase;
+				width: initial;
+			}
+		}
+	}
+}
+
+.v65-product-relatedProducts {
+	float: left;
+	padding: 2em 0;
+	width: 100%;
+
+	.v65-product-relatedProducts-title.v65-title {
+		font-size: 2em;
+		margin-top: 1em;
+		text-align: center
+	}
+
+	&:first-child {
+		border: 0;
+	}
+
+	.v65-product-addToCart-priceWrapper {
+		font-size: 0.8em;
+		margin-bottom: 10px;
+	}
+
+	.v65-product-relatedProducts-product {
+		@include boxSizing;
+		margin: 0;
+		padding: 1em 1%;
+
+		@media screen and (max-width: 870px){
+			width: 100%;
+		}
+
+		&:first-child {
+			border-left: 0;
+			border-top: 0;
+		}
+
+		.v65-title {
+			font-size: 1.2em;
+		}
+
+		.v65-product-addToCart-priceWrapper {
+			font-size: 0.95em;
+		}
+
+		.v65-product-photo img {
+			max-height: 200px;
+		}
+	}
+}
+
+// ============================= //
+// Modals //
+// ============================= //
+
+div#v65-LoginFormWrapper fieldset {
+	border: 0;
+}
+
+#v65-modalViel {
+	background-color: #000;
+	opacity: 0.6;
+    filter: alpha(opacity=6);
+    -moz-opacity: 0.6;
+}
+
+#v65-modalContentHeader {
+	background: transparent;
+	height: initial;
+}
+
+a.modalLinkBtn.modalClose,
+a.modalLinkAltBtn.modalClose {
+	background: transparent;
+
+	&:hover, &:focus, &:active {
+		background: transparent;
+	}
+
+	span {
+		color: #73695c;
+  		font-size: 19pt;
+  		line-height: 1.7;
+  		padding: 0 1px;
+	}
+}
+
+a.modalLinkAltBtn.modalClose span {
+	padding: 0;
+}
+
+div#v65-modalCartBody {
+	background: $backgroundColor;
+	border-color: darken($backgroundColor, 7%);
+	.right {
+		margin-bottom: 0.75em;
+	}
+}
+
+#v65-modalCartDropdown {
+	border-color: #E6E6E6;
+
+	@media screen and (max-width: 580px){
+		top: 3em;
+	}
+}
+
+#v65-modalCartTable {
+	strong {
+		font-weight: normal;
+		-ms-word-break: break-word;
+		word-break: break-word;
+	}
+
+	th, #v65-modalCartTableSubtotal td {
+		background-color: transparent;
+		font:{
+			size: 1em;
+			weight: normal;
+		}
+	}
+
+	#v65-modalCartTableSubtotal td {
+		padding: 2px 0;
+	}
+
+	td {
+		border: 0;
+		padding: 7px 1px;
+	}
+
+	th {
+		border-top: 0;
+		font-size: 0.8em;
+	}
+}
+
+.v65-form#v65-loginForm {
+
+	legend {
+		margin-bottom: 1em;
+	}
+
+}
+
+#v65-modalContent {
+	.v65-form#v65-loginForm {
+		margin: 0 auto;
+
+		legend {
+			font-size: 1.7em;
+			text-align: center;
+		}
+	}
+
+	p {
+		margin-bottom: 0.5em;
+	}
+}
+
+// ============================================ //
+// Quickview //
+// ============================================ /
+
+.v65-product-quickView {
+	border: 1px solid $borderColor;
+	border-radius: 0;
+	font-size: 16px;
+	font-weight: bold;
+	margin-left: -61px;
+	padding: 14px 5px;
+	text-transform: uppercase;
+
+	@media screen and (max-width: 550px){
+		display: none !important;
+	}
+}
+
+.v65-quickView {
+	background: lighten($backgroundColor, 5%);
+	border: 1px solid $borderColor;
+	border-radius: 0;
+	box-shadow: none;
+
+	.v65-product-tabs .last a,
+	.v65-quickView-close a {
+		border-radius: 0;
+	}
+
+	.v65-product-title {
+		margin: 0.5em 0;
+	}
+
+	.v65-quickView-close {
+		top: 15px;
+		right: 15px;
+
+		a {
+			font-size: 12px;
+			padding: 6px 15px;
+			text-transform: uppercase;
+		}
+	}
+
+	.modalClose a {
+		background: transparent;
+		padding: 0;
+
+		&:hover, &:focus, &:active {
+			background: transparent;
+		}
+
+		i {
+			color: $headingFontColor;
+			font-size: 2em;
+		}
+	}
+
+	.v65-product-tabs {
+		border-bottom: 0;
+
+		li a {
+			color: $secondaryAccentColor;
+			background: lighten($backgroundColor, 5%);
+			border: 0;
+			font-weight: normal;
+			font-family: $fontFamily;
+			text-transform: uppercase;
+			letter-spacing: 0.5px;
+			padding: 0 30px 0 0;
+
+			&:hover, &:focus, &:active {
+				outline: none;
+			}
+		}
+	}
+
+	.v65-product-tab-active {
+		border: 0;
+		padding: 25px 0;
+
+		a {
+			color: $linkColor;
+		}
+	}
+
+	.v65-product-tabRightcol {
+		float: none;
+		width: 100%;
+
+		.v65-wine-specs-title {
+			text-align: left;
+		}
+
+		.v65-wine-specs {
+			margin-bottom: 1em;
+		}
+
+		.v65-wine-specs .v65-product-attributeLabel,
+		.v65-wine-specs .v65-product-attributeValue {
+			width: initial;
+			text-align: left;
+		}
+	}
+
+	.v65-wine-specs .v65-product-attributeLabel, 
+	.v65-wine-profile .v65-product-attributeLabel {
+		color: $secondaryAccentColor;
+		font:{
+			family: $fontFamily;
+			size: 0.95em;
+			weight: normal;
+		}
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+	}
+
+	.v65-product-tab .v65-title {
+		display: none;
+	}
+	
+	.v65-product-review-wrapper {
+		border-bottom: 0;
+
+		.v65-product-review-avatar {
+			display: none;
+		}
+
+		.v65-product-review-comment-wrapper {
+			margin-left: 0;
+		}
+
+		.v65-product-review-reviewerName {
+			color: $headingFontColor;
+			font-size: 1em;			
+		}
+	}
+}
+
+.v65-product-attributeLabel {
+	font-weight: normal;
+}
+
+// ============================================ //
+// Cart //
+// ============================================ //
+
+#v65-cartCheckOutCoupons {
+	legend {
+		font-size: 1em;
+	}
+
+	form {
+		width: 300px
+	}
+
+	#v65-CouponCode {
+		height: 2em;
+		line-height: 2em;
+		width: 150px !important;
+	}
+
+	button.modalBtn {
+		line-height: 2em;
+		height: 2em;
+
+		@media screen and (max-width: 580px){
+			font-size: 0.6em;
+			line-height: 2.5em;
+			height: 2.5em;
+		}
+
+		span {
+			padding: 0 1em;
+		}
+	}
+}
+
+#v65-cartTable {
+	@media screen and (max-width: 800px){
+		font-size: 90%;
+	}
+
+	th, #v65-cartSubtotal td, .v65-cartTax td, #v65-cartTotal td {
+		background-color: transparent;
+	}
+
+	button span {
+		@media screen and (min-width: 581px){
+			padding: 0 1em;
+		}
+
+		@media screen and (max-width: 580px){
+			padding: 0 5px;
+		}
+	}
+
+	button.modalBtn, button.altModalBtn {
+		height: 2em;
+
+		@media screen and (max-width: 580px){
+			font-size: 0.8em;
+		}
+	}
+
+	a.modalLinkBtn, a.modalLinkAltBtn {
+		font-size: 0.8em;
+	}
+
+	.v65-cartItemDescription {
+		word-break: break-word;
+
+		.v65-cartItemDescription-sku .small {
+			display: none;
+		}
+	}
+
+	td, th {
+		font-weight: normal;
+	}
+}
+
+.v65-cartItem td,
+#v65-cartTable th,
+#v65-cartSubtotal td,
+#v65-cartTable #v65-cartTotal td {
+	border-color: darken($backgroundColor, 7%);
+}
+
+// ============================================ //
+// Checkout //
+// ============================================ //
+
+#v65-reviewClubSummaryWrapper,
+#v65-signUpClubSummaryWrapper,
+#v65-checkoutCartSummaryWrapper {
+	background: transparent;
+	border-color: #dbdbdb;
+}
+
+#v65-reviewClubSummaryWrapper {
+	@include boxSizing;
+	width: 500px;
+	max-width: 100%;
+}
+
+#v65-checkoutCartSummaryWrapper {
+	position: static;
+
+	@media screen and (min-width: 726px){
+		float: right;
+	}
+
+	#v65-checkCartSummaryMoreOptions, 
+	#v65-checkoutCartSummaryMini {
+		font-size: 15px;
+		margin: 0 2%;
+		width: 96%;
+	}
+
+	#v65-checkoutCartSummaryMini {
+		border-bottom: 2px solid $accentColor;
+		margin-bottom: 1em;
+	}
+
+	#v65-couponFormWrapper legend, #v65-giftCardFormWrapper legend, #v65-loyaltyPointsFormWrapper legend {
+		color: $secondaryAccentColor;
+		font:{
+			family: $fontFamily;
+			size: 0.9em;
+		}
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+		margin-bottom: 0;
+	}
+
+	#v65-couponFormWrapper div, #v65-giftCardFormWrapper div,
+	#v65-checkoutCartSummaryMini td {
+		font-size: 15px;
+		line-height: 1.5;
+	}
+
+	
+	#v65-pointsGainedOnOrder {
+		border-bottom: 1px solid #ccc;
+		border-top: 1px solid #ccc;
+		font-size: 1em;
+		padding: 0.5em 0;
+		margin: 0.5em 0 1em;
+
+		p {
+			margin: 0;
+		}
+	}
+
+	#v65-CouponCode, #v65-GiftCode {
+		height: 2.7em;
+		line-height: 2.7em;
+		width: 60% !important;
+
+		@media screen and (min-width: 581px){
+			height: 2em;
+			line-height: 2em;
+		}
+	}
+
+	.v65-rowOverline td {
+		border: 0;
+	}
+}
+
+#v65-checkoutFormWrapper,
+#v65-clubFormWrapper {
+	font-size: 0.9em;
+
+	.v65-form {
+		max-width: initial;
+	}
+}
+
+#v65-signUpClubSummaryWrapper {
+	float: right;
+	position: static;
+}
+
+.v65-rowOverline td {
+	border-color: #c8c8c8;
+}
+
+// ============================================ //
+// Points //
+// ============================================ //
+.v65-loyaltyPointsInputBoxWrapper {
+	button {
+		margin-top: 2.5em
+	}
+
+	.v65-loyaltyPointsInputBox {
+		width: 42%;
+	}
+
+	.v65-loyaltyPointsDollarValue {
+		margin: 0 2%;
+		width: 30%;
+	}
+}
+
+.v65-removeLoyaltyPoints img, .v65-infoTooltip img {
+	margin-top: 4px;
+	width: 16px;
+}
+
+#v65-loyaltyPointsFormWrapper {
+	div {
+		font-size: 15px;
+	}
+	
+	@media screen and (max-width: 725px) {
+	  input {
+	    width: 100% !important;
+	  } 
+
+	  button.modalBtn {
+	    width: auto;
+	  }
+	}
+}
+
+// ============================================ //
+// Allocations //
+// ============================================ //
+
+.v65-memberAllocationWrapper {
+	border-bottom: 0;
+
+	.v65-allocationEndDate, 
+	.v65-allocationMinBottlesPerOrder,
+	.v65-allocationMaxBottlesPerOrder {
+		display: block;
+		text-align: left;
+	}
+
+	h2 {
+		font-size: 2em;
+		text-align: left;
+	}
+
+	.v65-memberAllocationTeaser {
+		h3 {
+			font-size: 1.75em;
+		}
+
+		h1, h2, h3, h4, h5, h6, a {
+			text-align: left;
+		}
+
+		.v65-storeAllocationSKU {
+			display: block;
+		}
+
+		.v65-memberAllocationTable {
+			font-size: 14px;
+		}
+	}
+}
+
+// ============================================ //
+// Members Pages //
+// ============================================ //
+
+.membersPages {
+	.pageContent {
+		max-width: 950px;
+		margin: 0 auto;
+	}
+}
+
+.v65-memberClubDescription {
+	padding: 0;
+}
+
+form#v65-emailAFriend .formatBeside label {
+  float: none;
+  width: auto !important;
+  text-align: left;
+}
+
+form#v65-emailAFriend {
+  width: 100% !important;
+}
+
+form#v65-emailAFriend textarea,
+form#v65-emailAFriend .formatBeside input[type=text],
+form#v65-emailAFriend .formatBeside input[type=password] {
+    width: 100%;
+}
+
+.bx-viewport:before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0000004f;
+    content: '';
+}
+
+@media screen and (orientation:landscape)
+and (max-device-width: 700px) {
+   
+   #v65-modalContentWrapper{
+     left: 0%;
+     top: 0%;
+     margin: 0;
+     width: 100%;
+     border: none;
+   }
+
+   #v65-modalContent p{
+     font-size: 10pt;
+   }
+
+   .v65-form{
+    width: 50%;float: left;margin-right: 2%;
+  }
+
+   .v65-form input[type=text], .v65-form input[type=password]{
+      width: 93% !important;
+   }
+
+   .v65-form legend{
+     margin-bottom: 0 !important;
+   }
+}

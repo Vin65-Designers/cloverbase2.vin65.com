@@ -1,0 +1,587 @@
+.backToTop{
+	@include transition;
+	border: 3px solid $accentColor;
+	bottom: 20px;
+	color: $accentColor;
+	border-radius: 50%;
+	display: none;
+	font-size: 0.9em;
+	height: 1.3em;
+	line-height: 1.3em;
+	padding: 1em;
+	position: fixed;
+	right: 20px;
+	text:{
+		align: center;
+		decoration: none;
+	}
+	width: 1.3em;
+	z-index: 1000;
+}
+
+.pageBanner {
+	background-color: $subMenuSolidColor;
+}
+
+#pageBackground {
+	@include boxSizing;
+	-ms-behavior: url(backgroundsize.min.htc);
+	behavior: url(backgroundsize.min.htc);
+	background:{
+		attachment: fixed;
+		size: cover;
+		repeat: no-repeat;
+		position: center;
+	}
+	min-height: 450px;
+	padding-top: 25em;
+
+	@media screen and (min-width: 581px) and (max-width: 950px){
+		min-height: 300px;
+		padding-top: 12em;
+	}
+
+	@media only screen and (max-device-width: 1024px) and (orientation:landscape) {
+		background:{
+			size: cover;
+			attachment: inherit;
+		}
+	}
+
+	@media only screen and (max-device-width: 1024px) and (orientation:portrait) {
+		background:{
+			size: cover;
+			attachment: inherit;
+		}
+	}
+
+	@media screen and (max-width: 950px){
+		background-attachment: inherit;
+	}
+
+	@media screen and (max-width: 580px){
+		min-height: 200px;
+		padding-top: 12em;
+	}
+}
+
+.pageBanner {
+	position: relative;
+}
+
+.pageIntro {
+	background: $introBgImage;
+	border-bottom: $introBorderColor;
+	text-align: center;
+
+	.wrapper {
+		max-width: 1000px;
+		margin: 4em auto;
+	}
+}
+
+.pageContentWrapper, .wideContent {
+	// -ms-box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+	// -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+	// -o-box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+	// -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+	// box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+	position: relative;
+	z-index: 10;
+}
+
+// ============================= //
+// Misc //
+// ============================= //
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 25px;
+	height: 0;
+
+	@media screen and (min-width: 1401px){
+		margin: 0 auto;
+		max-width: 700px;
+		padding-bottom: 399px;
+	}
+
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.v65-socialMediaBar-GooglePlusOne .videoWrapper {
+	height: inherit;
+	max-width: inherit;
+	padding: 0;
+}
+
+// ============================= //
+// Calendar //
+// ============================= //
+
+// List //
+// ============================= //
+
+.v65-calendarList-Month {
+	border-bottom: 3px double $borderColor;
+	color: $accentColor;
+	font:{
+		family: $accentFont;
+		size: 2em;
+	}
+	max-width: 900px;
+	margin: 0 auto 1em;
+	text-align: center;
+}
+
+.v65-calendarList-Event {
+	max-width: 900px;
+	margin: 0 auto;
+	padding-left: 0;
+
+	strong {
+		color: $headingFontColor;
+		font:{
+			family: $fontFamily;
+			weight: normal;
+			size: 0.9em;
+		}
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+	}
+
+	.v65-title {
+		font-size: 1.5em;
+		margin-bottom: 1em;
+	}
+
+	.v65-calendarList-Time {
+		display: block;
+		font:{
+			family: $fontFamily;
+			style: normal;
+		}
+		text-transform: uppercase;
+	}
+}
+
+// Block //
+// ============================= //
+
+#v65-CalendarTable {
+	background-color: transparent;
+	border: 0;
+	color: $borderColor;
+
+	th {
+		background-color: transparent;
+		border: 0;
+		border-bottom: 2px solid $borderColor;
+		color: $fontColor;
+		padding: 5px 0;
+	}
+
+	td {
+		background-color: transparent;
+		border-left: 2px solid $borderColor;
+		border-bottom: 2px solid $borderColor;
+		border-right: 2px solid $borderColor;
+		height: 80px;
+	}
+
+	.v65-CalendarDay {
+		border: 0;
+		color: #6B6B6B;
+		font-size: 0.8em;
+	}
+
+	.v65-CalendarOffMonthDays {
+		background-color: transparent;
+	}
+
+	.v65-CalendarToDay {
+		@include boxSizing;
+		background-color: darken($backgroundColor, 7%);
+	}
+
+	.v65-CalendarEvent {
+		text-align: center;
+
+		@media screen and (max-width: 580px) {
+			background: $buttonColor;
+			border-radius: 3px;
+			padding: 0;
+		}
+			a {
+				color: $accentColor;
+
+				@media screen and (max-width: 580px) {
+					background-color: transparent;
+					color: #fff;
+					height: 2.3em;
+					width: auto;
+				}
+
+				@media screen and (max-width: 400px) {
+					word-break: break-word;
+				}
+			}
+	}
+}
+
+#v65-CalendarWrapper {
+	.icon-arrow-right,
+	.icon-arrow-left {
+		color: $accentColor;
+		padding: 7px;
+	}
+
+	h2 {
+		font-size: 2.4em;
+	}
+}
+
+// Drilldown //
+// ============================= //
+
+.eventDrilldownWrapper {
+	@include boxSizing;
+	border-top: 3px double #D6D4D2;
+	border-bottom: 3px double #D6D4D2;
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 18px 25px;
+	width: 100%;
+
+	@media screen and (max-width: 580px){
+		padding: 18px 25px;
+	}
+}
+
+.eventWrapper {
+	max-width: 950px;
+	margin: 0 auto;
+	padding-bottom: 3em;
+
+	.eventTitle {
+		text-align: center;
+		margin-bottom: 0.5em;
+	}
+
+	> h1 {
+		text-align: center;
+		padding: 0 0 0.3em;
+		margin-bottom: 0;
+
+		@media screen and (min-width: 751px){
+			padding: 0 2em 0.5em;
+		}
+	}
+
+	.backLink {
+		@media screen and (min-width: 751px){
+			position: absolute;
+			top: 14px;
+			z-index: 1;
+		}
+
+		@media screen and (max-width: 750px){
+			margin-bottom: 1em;
+			display: block;
+		}
+
+		i {
+			font-size: 0.8em;
+			color: $accentColor;
+		}
+
+		.eventsBackButton {
+			color: $accentColor;
+			font-family: $fontFamily;
+			text-transform: uppercase;
+			letter-spacing: 0.5px;
+			padding: 0 1em;
+		}
+	}
+
+	.event-description {
+		margin: 2em auto 1em;
+		max-width: 700px;
+	}
+}
+
+#v65-CalendarEventTable {
+	margin: 1em 0;
+	width: 100%;
+	
+	td {
+		padding: 4px 10px 4px 2px;
+	}
+
+	tr td {
+		strong {
+			font-weight: normal;
+		}
+		
+		&:first-child {
+    		color: $headingFontColor;
+    		font-family: $headingFontFamily;
+		}
+
+		&:last-child {
+			text-align: right;
+		}
+	}
+}
+
+// ============================= //
+// Misc //
+// ============================= //
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 25px;
+	height: 0;
+
+	@media screen and (min-width: 1401px){
+		margin: 0 auto;
+		max-width: 700px;
+		padding-bottom: 399px;
+	}
+
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.v65-featureRight, .v65-right, 
+.v65-featureLeft, .v65-left, 
+.v65-border{
+	@include boxSizing;
+}
+
+
+// ============================= //
+// Recipes - List //
+// ============================= //
+
+.v65-recipe {
+	max-width: 900px;
+	border-bottom: 3px double $borderColor;
+	text-align: left;
+	padding: 1.5em 0;
+	position: relative;
+	margin: 0 auto;
+
+	.v65-recipe-date {
+		color: $accentColor;
+		font:{
+			family: $accentFont;
+			size: 1.7em;
+			style: normal;
+		}
+		margin-bottom: 0.35em;
+	}
+
+	.v65-recipe-photo {
+		position: static; 
+
+		@media screen and (min-width: 551px) {
+			float: left;
+			width: 22%;
+		}
+	}
+
+	.v65-recipe-info {
+		margin-left: 0;
+
+		@media screen and (min-width: 551px) {
+			float: left;
+			margin-left: 3%;
+			width: 69%;
+		}
+	}
+
+	.v65-recipe-title {
+		font-size: 1.5em;
+	}
+
+	.recipe-arrow {
+		@include transition;
+		padding: 0 10px;
+		position: absolute;
+		right: 0;
+		bottom: 32px;
+
+		@media screen and (max-width: 700px){
+			display: none;
+		}
+
+		&:hover, &:focus, &:active {
+			transform: translateX(10px);
+		}
+
+		a {
+			color: $buttonColor;	
+		}
+	}  
+}
+
+// ============================= //
+// Recipes - Drilldown //
+// ============================= //
+
+.v65-recipe-drilldown {
+	padding-bottom: 3em;
+}
+
+.v65-recipe-drilldown-subtitle {
+	color: $headingFontColor;
+	font:{
+		family: $headingFontFamily;
+		size: 1.3em;
+		style: normal;
+	}
+	margin: 1em 0 0.5em;
+	text-transform: initial;
+}
+
+.v65-recipe-drilldown-right {
+	float: left;
+	margin-left: 0;
+	text-align: center;
+	width: 38%;
+
+	@media screen and (max-width: 1000px){
+		float: none;
+		max-width: 500px;
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.v65-recipe-attributeLabel {
+		color: $headingFontColor;
+		font:{
+			family: $fontFamily;
+			size: 0.9em;
+			style: normal;
+			weight: normal;
+		}
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+	}
+
+	.v65-recipe-attributeValue {
+		font-size: 16px;
+	}
+}
+
+.v65-recipe-drilldown-left {
+	float: left;
+	margin-left: 6%;
+	width: 56%;
+
+	@media screen and (max-width: 1000px){
+		float: none;
+		margin: 0 auto;
+		width: 100%;
+	}
+}
+
+.v65-recipe-drilldown-related-products {
+	border-top: 2px solid $borderColor;
+	margin-top: 3em;
+
+	.v65-product-title {
+		font-size: 1.15em;
+	}
+}
+
+// ============================= //
+// Photo Gallery //
+// ============================= //
+.nivoSlider {
+	margin: 0 auto;
+	max-width: 900px;
+}
+
+.nivo-directionNav a {
+	width: 26px;
+	height: 26px;
+	background: url(../images/gallery-arrows.png) no-repeat;
+}
+
+a.nivo-nextNav {
+	background-position: -26px 0px;
+}
+
+// ============================= //
+// Email A Friend //
+// ============================= //
+form#v65-emailAFriend {
+	width: 100% !important;
+
+	.formatBeside label {
+  		width: 29% !important;
+  	}
+
+	textarea,
+	.formatBeside input[type=text],
+	.formatBeside input[type=password],
+	.formatBeside input[type='username'],
+	.formatBeside input[type='tel'],
+	.formatBeside input[type='email'] {
+	    float: right;
+	    width: 68% !important;
+	    height: 3em;
+	    line-height: 3em;
+	}
+}
+
+@media screen and (max-width: 580px){
+  #v65-modalContentHeader {
+    padding: 0;
+    height: 2.5em;
+	
+	a.modalLinkBtn.modalClose span, a.modalLinkAltBtn.modalClose span {
+		padding: 0 1em;
+  	}
+
+	a.modalLinkBtn.modalClose {
+		padding: 0;
+	}
+  }
+
+  form#v65-emailAFriend {
+  	.formatBeside label {
+    	width: 38% !important;
+    }
+
+    .formatBeside label[for="submit"]{
+		width: 0% !important;
+		padding: 0;
+  	}
+
+  	textarea,
+  	.formatBeside input[type=text],
+  	.formatBeside input[type=password],
+  	.formatBeside input[type='username'],
+  	.formatBeside input[type='tel'],
+  	.formatBeside input[type='email'] {
+  	    height: 2em;
+  	    line-height: 2em;
+  	    width: 60% !important;
+  	}
+  }  
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<v65:metaTags></v65:metaTags>
+	<v65:customFile file="/v65html/_head.html"></v65:customFile>
+
+	<!--//Vin65 QuickLaunch//-->
+	<script type="text/javascript" src="http://quicklaunch.vin65.com/quicklaunch.js"></script>
+	<!--//Vin65 QuickLaunch//-->
+
+	<v65:css files="/assets/slick/slick-winedirect.min.css,/assets/slick/slick-theme-winedirect.min.css,/assets/css/screen.min.css"></v65:css>
+	
+	<!--[if lt IE 9]>
+		<script src="/assets/js/html5shiv-printshiv.js"></script>
+		<script src="/assets/js/respond.min.js"></script>
+	<![endif]-->
+
+	<!--[if IE 9]>
+		<style type="text/css">
+			.imagePreloader {
+				opacity: 1 !important;
+			}
+
+			.homepageGallery {
+				z-index: 0 !important;
+			}
+
+			.homepageSection {
+				padding: 6em 0 5.5em !important;
+			}
+
+			.homepageBanner {
+				min-height: 0 !important;
+			}
+		</style>
+	<![endif]-->
+
+	<!--[if IE 8]>
+		<style type="text/css">
+			.homepageSection {
+				border: 0 !important;
+				padding: 6em 0 5.5em !important;
+			}
+
+			.homepageSection .homeIcon {
+				border: 0 !important;
+			}
+		</style>
+	<![endif]-->
+</head>
+<body> 
+	<header class="primary v65-group">
+		<div class="headerTop">
+			<div class="wrapper v65-group">
+				<div class="user-tools topUserTools">
+					<v65:points></v65:points>
+					<v65:login></v65:login>
+				</div><!--/user-tools-->	
+				<div class="telephoneNumber">
+					<a href='tel:<v65:contentBlock group="Phone Number"></v65:contentBlock>'><span class="icon-phone" aria-hidden="true"></span><v65:contentBlock group="Phone Number"></v65:contentBlock></a>
+				</div>	
+			</div>
+		</div>
+
+		<div class="wrapper v65-group flex-container">
+
+			<v65:logo></v65:logo>
+
+			<span class="icon-menu"></span>
+
+			<nav class="mainMenu" aria-label="Main Menu">
+				<v65:layoutHeaderNav depth="2"></v65:layoutHeaderNav>
+			</nav>
+			<div class="user-tools cartNav">
+				<v65:modalCart></v65:modalCart>	
+			</div><!--/user-tools-->
+
+		</div>
+	</header>
+	<main>
+		<div class="pageTop homepageHeader v65-group" role="region" aria-label="content carousel">
+			<ul class="imagePreloader homepageGallery">
+				<v65:contentBlock group="Homepage Photo Gallery"></v65:contentBlock>
+			</ul>
+
+			<section class="v65-group galleryContent fadeIn" aria-label="Homepage photo gallery">
+				<v65:mainContent></v65:mainContent>
+			</section>
+		</div>
+
+		<a class="backToTop" href="#" role="navigation"><span class="icon-arrow-up"></span></a>
+
+		<section class="v65-group homepageSections flex-container" aria-label="Wines and Events">
+			<a name="homeContent"></a>
+				<v65:contentBlock group="Homepage Section"></v65:contentBlock>
+		</section>
+
+		<section class="v65-group homepageProductGroup" aria-label="Featured products">
+			<div class="wrapper">
+				<v65:product:group code="HomepageProductGroup"></v65:product:group>
+			</div>
+		</section>
+
+		<v65:contentBlock group="Homepage Banner"></v65:contentBlock>
+
+		<section class="v65-group homepageContent subscribeContent" aria-label="Newsletter sign up">
+			<div class="wrapper">
+				<v65:pods location="Footer Subscribe" type="description"></v65:pods>
+				<v65:subscribe contactType="Newsletter"></v65:subscribe>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="wrapper v65-group">
+			<div class="footerSection">
+				<h2><v65:pods location="Footer Left" type="title"></v65:pods></h2>
+				<nav aria-label="Footer Menu">
+					<v65:layoutFooterNav></v65:layoutFooterNav>
+				</nav>
+				<v65:pods location="Footer Left" type="description"></v65:pods>
+			</div>
+
+			<div class="footerSection">
+				<h2><v65:pods location="Footer Middle Left" type="title"></v65:pods></h2>
+				<v65:pods location="Footer Middle Left" type="description"></v65:pods>
+			</div>
+
+			<div class="footerSection">
+				<h2><v65:pods location="Footer Middle Right" type="title"></v65:pods></h2>
+				<v65:pods location="Footer Middle Right" type="description"></v65:pods>
+			</div>
+
+			<div class="footerSection">
+				<h2><v65:pods location="Footer Right Title" type="title"></v65:pods></h2>
+				<v65:socialMediaLinks></v65:socialMediaLinks>
+			</div>
+
+			<div class="lowerFooter">
+				<div class="copyright">
+					<div class="footer-info"><v65:footerInfo></v65:footerInfo></div>
+					<v65:copyright></v65:copyright>&nbsp;&#183;&nbsp;<v65:vin65Accolade></v65:vin65Accolade>
+				</div>
+			</div>
+		</div>
+	</footer>
+		
+	<v65:js files="/assets/slick/slick-winedirect.js,/assets/js/scripts.js,/assets/js/track-focus.min.js"></v65:js>
+
+	<!--//Vin65 QuickLaunchFooter//-->
+	<script src="http://assets.vin65.com/js/vin65Footer.js" type="text/javascript"></script>
+	<!--//Vin65 QuickLaunchFooter//-->
+
+</body>
+</html>
