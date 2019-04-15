@@ -127,8 +127,7 @@
 		homepageGallery : function(){
 			if($('.homepageGallery img').length > 1){
 				$('.homepageGallery').slick({
-					autoplay: false,//disable autoplay by default.
-					dots: false, //Show the dot navigation for each image
+					autoplay: false //disable autoplay by default.
 				});
 			}	
 		}
@@ -145,7 +144,6 @@
 				$("#pagePhotoGallery").v65PhotoGallery({
 					galleryHeight : null, // This value is translated to the set height of the gallery and will change the photogallery height
 					galleryWidth : null, // This value is translated to the set width of the gallery and will change the photogallery width
-					dots: true, //Show the dot navigation for each image
 					/*
 						Uncomment the code below if you want to change how the photo gallery is displayed.
 						arrows: true, //Show the arrow navigation
@@ -153,7 +151,7 @@
 						autoplaySpeed: 3000,, // Adjust the transition speed between images. Value is in milliseconds
 						centerMode: false, //Enables centered view with partial prev/next slides. Use with odd numbered slidesToShow counts.
             centerPadding: '50px', //Side padding when in center mode (px or %)
-						
+						dots: true, //Show the dot navigation for each image
 						fade: false, //Add a fade effect between image transitions
             slidesToShow: 1, //How may slides to show at once
 						slidesToScroll: 1 //How many slides to scroll at once
@@ -371,8 +369,8 @@ $(".wineProfile").attr('role', 'link').attr('tabindex','0');
 	$.fn.v65PhotoGallery = function(options){
 		var defaults = {
 			galleryId : $("#pagePhotoGallery").attr("v65jsphotogalleryid"),
-			galleryHeight : $("#pagePhotoGallery").attr("v65jsphotogalleryheight"),
-			galleryWidth : $("#pagePhotoGallery").attr("v65jsphotogallerywidth"),
+			galleryHeight : null,
+			galleryWidth : null,
 			timestamp : "&timestamp="+ new Date().getTime()
 		},
 		gallery = $(this),
