@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset "UTF-8";
 /* CSS Document */
 /* ====================================================================================================
 	Table of Content
@@ -189,7 +189,7 @@ pre {
  * Set consistent quote types.
  */
 q {
-  quotes: "\201C" "\201D" "\2018" "\2019";
+  quotes: "“" "”" "‘" "’";
 }
 
 /**
@@ -313,9 +313,9 @@ select {
  *    `input` and others.
  */
 button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+html input[type=button],
+input[type=reset],
+input[type=submit] {
   -webkit-appearance: button;
   /* 2 */
   cursor: pointer;
@@ -334,8 +334,8 @@ html input[disabled] {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
-input[type="checkbox"],
-input[type="radio"] {
+input[type=checkbox],
+input[type=radio] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -347,7 +347,7 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-input[type="search"] {
+input[type=search] {
   -webkit-appearance: textfield;
   /* 1 */
   -moz-box-sizing: content-box;
@@ -360,8 +360,8 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -400,16 +400,15 @@ table {
 /* Icon Fonts
 /*-----------------------------------------------*/
 @font-face {
-  font-family: 'icomoon';
+  font-family: "icomoon";
   src: url("../font/icomoon.eot?2tpbk0");
   src: url("../font/icomoon.eot?2tpbk0#iefix") format("embedded-opentype"), url("../font/icomoon.ttf?2tpbk0") format("truetype"), url("../font/icomoon.woff?2tpbk0") format("woff"), url("../font/icomoon.svg?2tpbk0#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
-
-[class^="icon-"], [class*=" icon-"] {
+[class^=icon-], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: "icomoon" !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -422,383 +421,235 @@ table {
 }
 
 .icon-paper-clip:before {
-  content: "\e001";
+  content: "";
 }
 
 .icon-link:before {
-  content: "\e006";
+  content: "";
 }
 
 .icon-image:before {
-  content: "\e010";
+  content: "";
 }
 
 .icon-clock:before {
-  content: "\e015";
+  content: "";
 }
 
 .icon-settings:before {
-  content: "\e023";
+  content: "";
 }
 
 .icon-heart:before {
-  content: "\e024";
+  content: "";
 }
 
 .icon-book:before {
-  content: "\e030";
+  content: "";
 }
 
 .icon-search:before {
-  content: "\e036";
+  content: "";
 }
 
 .icon-sun:before {
-  content: "\e064";
+  content: "";
 }
 
 .icon-map:before {
-  content: "\e072";
+  content: "";
 }
 
 .icon-comments:before {
-  content: "\e077";
+  content: "";
 }
 
 .icon-share:before {
-  content: "\e081";
+  content: "";
 }
 
 .icon-tag:before {
-  content: "\e085";
+  content: "";
 }
 
 .icon-arrow-left:before {
-  content: "\e094";
+  content: "";
 }
 
 .icon-arrow-right:before {
-  content: "\e095";
+  content: "";
 }
 
 .icon-arrow-up:before {
-  content: "\e096";
+  content: "";
 }
 
 .icon-arrow-down:before {
-  content: "\e097";
+  content: "";
 }
 
 .icon-email:before {
-  content: "\e0be";
+  content: "";
 }
 
 .icon-phone:before {
-  content: "\e0cd";
+  content: "";
 }
 
 .icon-plus:before {
-  content: "\e114";
+  content: "";
 }
 
 .icon-minus:before {
-  content: "\e115";
+  content: "";
 }
 
 .icon-cross:before {
-  content: "\e117";
+  content: "";
 }
 
 .icon-menu:before {
-  content: "\e120";
+  content: "";
 }
 
 .icon-person:before {
-  content: "\e7fd";
+  content: "";
 }
 
 .icon-lock:before {
-  content: "\e897";
+  content: "";
 }
 
 .icon-cart:before {
-  content: "\e8cc";
+  content: "";
 }
 
 .icon-calendar:before {
-  content: "\e905";
+  content: "";
 }
 
 .icon-pencil:before {
-  content: "\e906";
+  content: "";
 }
 
 .icon-home:before {
-  content: "\e907";
+  content: "";
 }
 
 .icon-medal:before {
-  content: "\e908";
+  content: "";
 }
 
 .icon-clothes:before {
-  content: "\e909";
+  content: "";
 }
 
 .icon-music:before {
-  content: "\e90a";
+  content: "";
 }
 
 .icon-star:before {
-  content: "\e90b";
+  content: "";
 }
 
 .icon-wine:before {
-  content: "\e90c";
+  content: "";
 }
 
 .icon-juice:before {
-  content: "\e90d";
+  content: "";
 }
 
 .icon-gift:before {
-  content: "\e90e";
+  content: "";
 }
 
 .icon-flower:before {
-  content: "\e90f";
+  content: "";
 }
 
 .icon-leaves:before {
-  content: "\e910";
+  content: "";
 }
 
 .icon-google-plus:before {
-  content: "\e900";
+  content: "";
 }
 
 .icon-pinterest:before {
-  content: "\e901";
+  content: "";
 }
 
 .icon-yelp:before {
-  content: "\e902";
+  content: "";
 }
 
 .icon-delectable:before {
-  content: "\e903";
+  content: "";
 }
 
 .icon-twitter:before {
-  content: "\f099";
+  content: "";
 }
 
 .icon-facebook:before {
-  content: "\f09a";
+  content: "";
 }
 
 .icon-linked-in:before {
-  content: "\f0e1";
+  content: "";
 }
 
 .icon-youtube:before {
-  content: "\f167";
+  content: "";
 }
 
 .icon-instagram:before {
-  content: "\f16d";
+  content: "";
 }
 
 .icon-tumblr:before {
-  content: "\f173";
+  content: "";
 }
 
 .icon-vine:before {
-  content: "\f1ca";
+  content: "";
 }
 
 .icon-cc-visa:before {
-  content: "\f1f0";
+  content: "";
 }
 
 .icon-cc-mastercard:before {
-  content: "\f1f1";
+  content: "";
 }
 
 .icon-cc-discover:before {
-  content: "\f1f2";
+  content: "";
 }
 
 .icon-cc-amex:before {
-  content: "\f1f3";
+  content: "";
 }
 
 .icon-cc-paypal:before {
-  content: "\f1f4";
+  content: "";
 }
 
 .icon-cc-stripe:before {
-  content: "\f1f5";
+  content: "";
 }
 
 .icon-tripadvisor:before {
-  content: "\f262";
+  content: "";
 }
 
 .icon-vimeo:before {
-  content: "\f27d";
+  content: "";
 }
 
 .icon-snapchat:before {
-  content: "\f2ac";
-}
-
-/*
- * jQuery Nivo Slider v3.0.1
- * http://nivo.dev7studios.com
- *
- * Copyright 2012, Dev7studios
- * Free to use and abuse under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- */
-/* The Nivo Slider styles */
-.nivoSlider {
-  position: relative;
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  background: white url(../nivo/loading.gif) no-repeat 50% 50%;
-}
-
-.nivoSlider img {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-
-.nivo-main-image {
-  display: block !important;
-  position: relative !important;
-  width: 100% !important;
-}
-
-/* If an image is wrapped in a link */
-.nivoSlider a.nivo-imageLink {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  border: 0;
-  padding: 0;
-  margin: 0;
-  z-index: 6;
-  display: none;
-  cursor: hand;
-  background-color: #fff;
-  filter: alpha(opacity=0);
-  /*non ie*/
-  opacity: 0;
-}
-
-/* The slices and boxes in the Slider */
-.nivo-slice {
-  display: block;
-  position: absolute;
-  z-index: 5;
-  height: 100%;
-  top: 0;
-}
-
-.nivo-box {
-  display: block;
-  position: absolute;
-  z-index: 5;
-  overflow: hidden;
-}
-
-.nivo-box img {
-  display: block;
-}
-
-/* Caption styles */
-.nivo-caption {
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-  background: #000;
-  color: #fff;
-  width: 100%;
-  z-index: 8;
-  padding: 5px 10px;
-  opacity: 0.8;
-  overflow: hidden;
-  display: none;
-  -moz-opacity: 0.8;
-  filter: alpha(opacity=8);
-  -webkit-box-sizing: border-box;
-  /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;
-  /* Firefox, other Gecko */
-  box-sizing: border-box;
-  /* Opera/IE 8+ */
-}
-
-.nivo-caption p {
-  padding: 5px;
-  margin: 0;
-}
-
-.nivo-caption a {
-  display: inline !important;
-}
-
-.nivo-html-caption {
-  display: none;
-}
-
-/* Direction nav styles (e.g. Next & Prev) */
-.nivo-directionNav a {
-  display: block;
-  width: 30px;
-  height: 30px;
-  background: url(../nivo/arrows.png) no-repeat;
-  text-indent: -9999px;
-  border: 0;
-  position: absolute;
-  top: 45%;
-  z-index: 9;
-  cursor: pointer;
-}
-
-a.nivo-prevNav {
-  left: 15px;
-}
-
-a.nivo-nextNav {
-  background-position: -30px 0px;
-  right: 15px;
-}
-
-/* Control nav styles (e.g. 1,2,3...) */
-.nivo-controlNav {
-  text-align: center;
-  padding: 15px 0;
-}
-
-.nivo-controlNav a {
-  display: inline-block;
-  width: 22px;
-  height: 22px;
-  background: url(../nivo/bullets.png) no-repeat;
-  color: transparent;
-  border: 0;
-  margin: 0 2px;
-  cursor: pointer;
-}
-
-.nivo-controlNav a.active {
-  background-position: 0 -22px;
+  content: "";
 }
 
 .transition {
@@ -842,7 +693,7 @@ html {
 }
 
 body {
-  background: #f2efed;
+  background: #F2EFED;
   color: #6d6d6d;
   font-family: "Karla", sans-serif;
   font-size: 18px;
@@ -867,7 +718,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #332f2c;
+  color: #332F2C;
   font-weight: normal;
   margin: 0;
 }
@@ -913,14 +764,14 @@ h4 {
 }
 
 .galleryContent h1, .v65-podDescription h2, h5 {
-  color: #aba07a;
+  color: #ABA07A;
   font-size: 2.2em;
   font-family: "Cookie", cursive;
   line-height: 1.3;
 }
 
 h6 {
-  color: #4e4937;
+  color: #4E4937;
   font-size: 1em;
   font-family: "Prata", serif;
   line-height: 1.3;
@@ -928,28 +779,28 @@ h6 {
 }
 
 .v65-title {
-  color: #332f2c;
+  color: #332F2C;
   font-family: "Prata", serif;
   font-size: 1.5em;
   line-height: 1.2;
   margin-bottom: 0.2em;
 }
 .v65-title a {
-  color: #332f2c;
+  color: #332F2C;
 }
 .v65-title a:hover, .v65-title a:focus, .v65-title a:visited {
   text-decoration: none;
 }
 
 .v65-subtitle {
-  color: #aba07a;
+  color: #ABA07A;
   font-size: 1.8em;
   font-family: "Cookie", cursive;
   line-height: 1.2;
   margin-bottom: 0.2em;
 }
 .v65-subtitle a {
-  color: #aba07a;
+  color: #ABA07A;
 }
 .v65-subtitle a:hover, .v65-subtitle a:focus, .v65-subtitle a:visited {
   text-decoration: none;
@@ -967,7 +818,7 @@ p, blockquote {
 }
 
 blockquote {
-  color: #4e4937;
+  color: #4E4937;
   max-width: 600px;
   text-align: center;
   margin: 1em auto;
@@ -985,7 +836,7 @@ dd, dt, li {
 }
 
 a {
-  color: #aba07a;
+  color: #ABA07A;
   text-decoration: none;
 }
 
@@ -994,7 +845,7 @@ img {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   border: none;
-  border-color: #aba07a;
+  border-color: #ABA07A;
   height: auto !important;
   max-width: 100%;
 }
@@ -1008,7 +859,7 @@ legend {
 }
 
 hr {
-  background-color: #d6d4d2;
+  background-color: #D6D4D2;
   border: 0;
   color: #6d6d6d;
   height: 2px;
@@ -1026,7 +877,7 @@ a[name=footerNav] {
      2. Header
 ======================================================================================================== */
 header.primary {
-  background: #332f2c;
+  background: #332F2C;
   font-family: "Karla", sans-serif;
   position: relative;
   width: 100%;
@@ -1066,14 +917,14 @@ header.primary .socialIcons {
   }
 }
 header.primary .socialIcons li {
-  color: #ada073;
+  color: #ADA073;
   list-style-type: none;
   display: inline-block;
   font-size: 0.75em;
   padding: 0 5px;
 }
 header.primary .socialIcons li a {
-  color: #ada073;
+  color: #ADA073;
 }
 header.primary .headerTop {
   background: #2b2725;
@@ -1102,7 +953,7 @@ header.primary .headerTop .telephoneNumber a {
   color: #96958d;
 }
 header.primary .headerTop .telephoneNumber span {
-  color: #ada073;
+  color: #ADA073;
   display: inline-block;
   font-size: 14px;
   padding: 0;
@@ -1145,11 +996,11 @@ header.primary.checkoutHeader .v65-logo {
   line-height: 2.5em;
 }
 .user-tools.cartNav #v65-modalCart > a {
-  color: #b1afa4;
+  color: #B1AFA4;
   font-size: 15px;
 }
 .user-tools.cartNav #v65-modalCart > a:hover, .user-tools.cartNav #v65-modalCart > a:focus, .user-tools.cartNav #v65-modalCart > a:active {
-  color: #d6d4cb;
+  color: #D6D4CB;
 }
 @media screen and (max-width: 950px) {
   .user-tools.cartNav {
@@ -1163,7 +1014,7 @@ header.primary.checkoutHeader .v65-logo {
   margin-right: 5px;
 }
 .user-tools .icon-person, .user-tools .icon-cart {
-  color: #ada073;
+  color: #ADA073;
   width: 15px;
   display: inline-block;
   font-size: 15px;
@@ -1175,7 +1026,7 @@ header.primary.checkoutHeader .v65-logo {
 }
 @media screen and (min-width: 581px) {
   .user-tools .v65-yourAccount, .user-tools .v65-editProfile,
-  .user-tools .v65-login, .user-tools .v65-logout {
+.user-tools .v65-login, .user-tools .v65-logout {
     position: static;
     width: auto;
     width: initial;
@@ -1183,7 +1034,7 @@ header.primary.checkoutHeader .v65-logo {
 }
 @media screen and (min-width: 581px) {
   .user-tools .v65-yourAccount, .user-tools .v65-editProfile,
-  .user-tools .v65-login, .user-tools .v65-logout {
+.user-tools .v65-login, .user-tools .v65-logout {
     margin-top: 1px;
     height: 2em;
     line-height: 2em;
@@ -1191,7 +1042,7 @@ header.primary.checkoutHeader .v65-logo {
 }
 @media screen and (max-width: 580px) {
   .user-tools .v65-yourAccount, .user-tools .v65-editProfile,
-  .user-tools .v65-login, .user-tools .v65-logout {
+.user-tools .v65-login, .user-tools .v65-logout {
     height: 3em;
     line-height: 3em;
   }
@@ -1341,7 +1192,7 @@ header.primary.checkoutHeader .v65-logo {
     -o-transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
-    background: #3c3836;
+    background: #3C3836;
     border-left: 1px solid #34302f;
     max-height: 87%;
     max-height: -moz-calc(100% - 146px);
@@ -1399,7 +1250,7 @@ header.primary.checkoutHeader .v65-logo {
 }
 @media screen and (min-width: 951px) {
   .mainMenu ul ul {
-    background: #3c3836;
+    background: #3C3836;
     border: 1px solid #34302f;
     visibility: hidden;
     opacity: 0;
@@ -1477,7 +1328,7 @@ header.primary.checkoutHeader .v65-logo {
   }
 }
 .mainMenu li li a {
-  color: #b1afa4;
+  color: #B1AFA4;
   display: block;
   line-height: 1.5;
   margin: 0;
@@ -1491,7 +1342,7 @@ header.primary.checkoutHeader .v65-logo {
   }
 }
 .mainMenu li li a:hover {
-  color: #d6d4cb;
+  color: #D6D4CB;
 }
 @media screen and (max-width: 950px) {
   .mainMenu li li a:after {
@@ -1500,14 +1351,14 @@ header.primary.checkoutHeader .v65-logo {
 }
 @media screen and (max-width: 950px) {
   .mainMenu li li a {
-    color: #b1afa4;
+    color: #B1AFA4;
   }
   .mainMenu li li a:hover {
-    color: #b1afa4;
+    color: #B1AFA4;
   }
 }
 .mainMenu a {
-  color: #b1afa4;
+  color: #B1AFA4;
   display: inline-block;
   margin: 0;
   padding: 44px 0;
@@ -1523,14 +1374,14 @@ header.primary.checkoutHeader .v65-logo {
 }
 .mainMenu a:hover, .mainMenu a:focus, .mainMenu a:active {
   background: none;
-  color: #d6d4cb;
+  color: #D6D4CB;
   outline: none;
   text-decoration: none;
 }
 @media screen and (max-width: 950px) {
   .mainMenu a:after {
-    content: "\e095";
-    font-family: 'icomoon';
+    content: "";
+    font-family: "icomoon";
     font-size: 0.9em;
     position: absolute;
     right: 10px;
@@ -1538,20 +1389,19 @@ header.primary.checkoutHeader .v65-logo {
 }
 @media screen and (max-width: 950px) {
   .mainMenu a {
-    color: #b1afa4;
+    color: #B1AFA4;
   }
   .mainMenu a:hover {
-    color: #b1afa4;
+    color: #B1AFA4;
   }
 }
 .mainMenu .v65-home {
   display: none;
 }
-
 .subMenu, .subSubMenu {
-  background: #3e3a36;
+  background: #3E3A36;
   background: rgba(56, 53, 50, 0.76);
-  border-top: 1px solid #2f2d2b;
+  border-top: 1px solid #2F2D2B;
   font-size: 15px;
   font-family: "Karla", sans-serif;
   position: relative;
@@ -1586,16 +1436,16 @@ header.primary.checkoutHeader .v65-logo {
   margin-left: 10px;
 }
 .subMenu a, .subSubMenu a {
-  color: #a7a7a7;
+  color: #A7A7A7;
   line-height: 1.5;
   width: 100%;
 }
 .subMenu a:hover, .subMenu a:focus, .subMenu a:active, .subSubMenu a:hover, .subSubMenu a:focus, .subSubMenu a:active {
-  color: #a7a7a7;
+  color: #A7A7A7;
 }
 
 .subSubMenu {
-  background: #f2efed;
+  background: #F2EFED;
   font-size: 14px;
 }
 @media screen and (max-width: 767px) {
@@ -1636,7 +1486,7 @@ header.primary.checkoutHeader .v65-logo {
   right: 1em;
 }
 .icon-menu:hover, .icon-menu:focus, .icon-menu:active {
-  color: #d6d4cb;
+  color: #D6D4CB;
 }
 @media screen and (max-width: 580px) {
   .icon-menu {
@@ -1676,7 +1526,7 @@ header.primary.checkoutHeader .v65-logo {
      4. Content
 ======================================================================================================== */
 #v65-modalContentHeader {
-  background: #332f2c;
+  background: #332F2C;
 }
 
 @media screen and (max-width: 767px) {
@@ -1741,22 +1591,18 @@ header.primary.checkoutHeader .v65-logo {
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }
 }
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }
 }
-
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -1765,14 +1611,12 @@ header.primary.checkoutHeader .v65-logo {
     -webkit-animation-timing-function: cubic-bezier(0, 0.59, 0.375, 1);
     animation-timing-function: cubic-bezier(0, 0.59, 0.375, 1);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -1781,15 +1625,13 @@ header.primary.checkoutHeader .v65-logo {
     -webkit-animation-timing-function: cubic-bezier(0, 0.59, 0.375, 1);
     animation-timing-function: cubic-bezier(0, 0.59, 0.375, 1);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }
-
-input[type='text'], input[type='password'], input[type='username'], input[type='tel'], input[type='email'], textarea, input[type='number'] {
+input[type=text], input[type=password], input[type=username], input[type=tel], input[type=email], textarea, input[type=number] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1803,28 +1645,28 @@ input[type='text'], input[type='password'], input[type='username'], input[type='
   font-size: 0.9em;
 }
 @media screen and (min-width: 581px) {
-  input[type='text'], input[type='password'], input[type='username'], input[type='tel'], input[type='email'], textarea, input[type='number'] {
+  input[type=text], input[type=password], input[type=username], input[type=tel], input[type=email], textarea, input[type=number] {
     height: 2.9em;
     line-height: 2.9em;
   }
 }
-input[type='text']:focus, input[type='password']:focus, input[type='username']:focus, input[type='tel']:focus, input[type='email']:focus, textarea:focus, input[type='number']:focus {
+input[type=text]:focus, input[type=password]:focus, input[type=username]:focus, input[type=tel]:focus, input[type=email]:focus, textarea:focus, input[type=number]:focus {
   background-color: #FBFBFB;
   border-color: #CECECE;
   outline: none;
 }
 
-input[type='number'] {
+input[type=number] {
   padding: 0.75em 0.5em;
 }
 @media screen and (min-width: 581px) {
-  input[type='number'] {
+  input[type=number] {
     height: 2.9em;
     line-height: 2.9em;
   }
 }
 @media screen and (max-width: 580px) {
-  input[type='number'] {
+  input[type=number] {
     height: 4em;
     line-height: 4em;
     min-width: 3em;
@@ -1865,7 +1707,7 @@ fieldset#v65-fieldset-choices {
   width: 100%;
 }
 .v65-form legend, #v65-memberFormWrapper legend {
-  color: #332f2c;
+  color: #332F2C;
   font-family: "Prata", serif;
   letter-spacing: 0;
   padding: 0 0 6px;
@@ -1880,7 +1722,7 @@ fieldset#v65-fieldset-choices {
 .v65-form label, #v65-memberFormWrapper label {
   padding-bottom: 2px;
 }
-.v65-form input[type=text], .v65-form input[type=password], .v65-form input[type='username'], .v65-form textarea, .v65-form input[type='number'], #v65-memberFormWrapper input[type=text], #v65-memberFormWrapper input[type=password], #v65-memberFormWrapper input[type='username'], #v65-memberFormWrapper textarea, #v65-memberFormWrapper input[type='number'] {
+.v65-form input[type=text], .v65-form input[type=password], .v65-form input[type=username], .v65-form textarea, .v65-form input[type=number], #v65-memberFormWrapper input[type=text], #v65-memberFormWrapper input[type=password], #v65-memberFormWrapper input[type=username], #v65-memberFormWrapper textarea, #v65-memberFormWrapper input[type=number] {
   width: 100% !important;
 }
 
@@ -1894,7 +1736,7 @@ fieldset#v65-fieldset-choices {
 
 #v65-checkBilling legend,
 #v65-memberFormWrapper legend {
-  color: #332f2c;
+  color: #332F2C;
   font-family: "Prata", serif;
   font-size: 1.7em;
   letter-spacing: 0;
@@ -1955,49 +1797,49 @@ fieldset#v65-fieldset-choices {
 }
 @media screen and (min-width: 581px) {
   #v65-checkBilling select[name=BillBirthDay], #v65-checkBilling select[name=BillBirthYear],
-  #v65-checkBilling select[name=BirthDay], #v65-checkBilling select[name=BirthYear],
-  #v65-checkBilling select[name=ShipBirthDay], #v65-checkBilling select[name=ShipBirthYear],
-  #v65-memberFormWrapper select[name=BillBirthDay],
-  #v65-memberFormWrapper select[name=BillBirthYear],
-  #v65-memberFormWrapper select[name=BirthDay],
-  #v65-memberFormWrapper select[name=BirthYear],
-  #v65-memberFormWrapper select[name=ShipBirthDay],
-  #v65-memberFormWrapper select[name=ShipBirthYear] {
+#v65-checkBilling select[name=BirthDay], #v65-checkBilling select[name=BirthYear],
+#v65-checkBilling select[name=ShipBirthDay], #v65-checkBilling select[name=ShipBirthYear],
+#v65-memberFormWrapper select[name=BillBirthDay],
+#v65-memberFormWrapper select[name=BillBirthYear],
+#v65-memberFormWrapper select[name=BirthDay],
+#v65-memberFormWrapper select[name=BirthYear],
+#v65-memberFormWrapper select[name=ShipBirthDay],
+#v65-memberFormWrapper select[name=ShipBirthYear] {
     width: 80px;
   }
 }
 @media screen and (max-width: 580px) {
   #v65-checkBilling select[name=BillBirthDay], #v65-checkBilling select[name=BillBirthYear],
-  #v65-checkBilling select[name=BirthDay], #v65-checkBilling select[name=BirthYear],
-  #v65-checkBilling select[name=ShipBirthDay], #v65-checkBilling select[name=ShipBirthYear],
-  #v65-memberFormWrapper select[name=BillBirthDay],
-  #v65-memberFormWrapper select[name=BillBirthYear],
-  #v65-memberFormWrapper select[name=BirthDay],
-  #v65-memberFormWrapper select[name=BirthYear],
-  #v65-memberFormWrapper select[name=ShipBirthDay],
-  #v65-memberFormWrapper select[name=ShipBirthYear] {
+#v65-checkBilling select[name=BirthDay], #v65-checkBilling select[name=BirthYear],
+#v65-checkBilling select[name=ShipBirthDay], #v65-checkBilling select[name=ShipBirthYear],
+#v65-memberFormWrapper select[name=BillBirthDay],
+#v65-memberFormWrapper select[name=BillBirthYear],
+#v65-memberFormWrapper select[name=BirthDay],
+#v65-memberFormWrapper select[name=BirthYear],
+#v65-memberFormWrapper select[name=ShipBirthDay],
+#v65-memberFormWrapper select[name=ShipBirthYear] {
     width: 28%;
   }
 }
 @media screen and (min-width: 581px) {
   #v65-checkBilling select[name=BillBirthMonth], #v65-checkBilling select[name=BirthMonth], #v65-checkBilling select[name=ShipBirthMonth],
-  #v65-memberFormWrapper select[name=BillBirthMonth],
-  #v65-memberFormWrapper select[name=BirthMonth],
-  #v65-memberFormWrapper select[name=ShipBirthMonth] {
+#v65-memberFormWrapper select[name=BillBirthMonth],
+#v65-memberFormWrapper select[name=BirthMonth],
+#v65-memberFormWrapper select[name=ShipBirthMonth] {
     width: 100px;
   }
 }
 @media screen and (max-width: 580px) {
   #v65-checkBilling select[name=BillBirthMonth], #v65-checkBilling select[name=BirthMonth], #v65-checkBilling select[name=ShipBirthMonth],
-  #v65-memberFormWrapper select[name=BillBirthMonth],
-  #v65-memberFormWrapper select[name=BirthMonth],
-  #v65-memberFormWrapper select[name=ShipBirthMonth] {
+#v65-memberFormWrapper select[name=BillBirthMonth],
+#v65-memberFormWrapper select[name=BirthMonth],
+#v65-memberFormWrapper select[name=ShipBirthMonth] {
     width: 38%;
   }
 }
 @media screen and (max-width: 580px) {
   #v65-checkBilling select[name=BillStateCode],
-  #v65-memberFormWrapper select[name=BillStateCode] {
+#v65-memberFormWrapper select[name=BillStateCode] {
     width: 100%;
   }
 }
@@ -2039,7 +1881,7 @@ fieldset#v65-fieldset-choices {
 }
 
 .homepageGallery {
-  background: #332f2c;
+  background: #332F2C;
   margin: 0;
   padding: 0;
   position: absolute;
@@ -2060,11 +1902,6 @@ fieldset#v65-fieldset-choices {
   position: relative;
   width: 100%;
   height: 100%;
-}
-@media screen and (min-width: 769px) {
-  .homepageGallery .homepagePhoto {
-    background-attachment: fixed;
-  }
 }
 @media only screen and (device-width: 768px) {
   .homepageGallery .homepagePhoto {
@@ -2134,7 +1971,6 @@ fieldset#v65-fieldset-choices {
 }
 @media screen and (min-width: 1001px) {
   .galleryContent.galleryFixed {
-    position: fixed;
     top: initial;
     left: 50%;
     margin-left: -475px;
@@ -2196,8 +2032,8 @@ fieldset#v65-fieldset-choices {
 
 .homepageContent {
   background: url(../images/texture-cream.jpg);
-  border-top: 1px solid #ded6d0;
-  border-bottom: 1px solid #ded6d0;
+  border-top: 1px solid #DED6D0;
+  border-bottom: 1px solid #DED6D0;
   float: left;
   position: relative;
   text-align: center;
@@ -2333,7 +2169,7 @@ fieldset#v65-fieldset-choices {
   -o-box-shadow: 1px 1px 4px rgba(47, 40, 30, 0.21);
   -webkit-box-shadow: 1px 1px 4px rgba(47, 40, 30, 0.21);
   box-shadow: 1px 1px 4px rgba(47, 40, 30, 0.21);
-  border: 5px ridge #aba07a;
+  border: 5px ridge #ABA07A;
   margin: 1%;
   padding: 10em 0 7.5em;
   position: relative;
@@ -2425,7 +2261,7 @@ fieldset#v65-fieldset-choices {
   }
 }
 .homepageProductGroup {
-  background: #f2efed;
+  background: #F2EFED;
   position: relative;
   z-index: 2;
 }
@@ -2473,7 +2309,7 @@ fieldset#v65-fieldset-choices {
 
 .homepageBottomContent {
   display: none;
-  background: #e4e0de;
+  background: #E4E0DE;
   float: left;
   width: 100%;
 }
@@ -2487,8 +2323,8 @@ fieldset#v65-fieldset-choices {
   display: none;
 }
 .homepageEvents .v65-event-upcoming-event {
-  border-top: 1px solid #d6d4d2;
-  border-bottom: 1px solid #d6d4d2;
+  border-top: 1px solid #D6D4D2;
+  border-bottom: 1px solid #D6D4D2;
   text-align: left;
   padding: 1.5em 0;
   position: relative;
@@ -2509,10 +2345,10 @@ fieldset#v65-fieldset-choices {
   transform: translateX(10px);
 }
 .homepageEvents .v65-event-upcoming-event .event-arrow a {
-  color: #5f794c;
+  color: #5F794C;
 }
 .homepageEvents .v65-event-upcoming-event .v65-event-upcoming-event-date {
-  color: #aba07a;
+  color: #ABA07A;
   font-family: "Prata", serif;
   font-size: 0.9em;
   font-weight: bold;
@@ -2536,9 +2372,9 @@ fieldset#v65-fieldset-choices {
   -o-transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  border: 3px solid #aba07a;
+  border: 3px solid #ABA07A;
   bottom: 20px;
-  color: #aba07a;
+  color: #ABA07A;
   border-radius: 50%;
   display: none;
   font-size: 0.9em;
@@ -2554,7 +2390,7 @@ fieldset#v65-fieldset-choices {
 }
 
 .pageBanner {
-  background-color: #3e3a36;
+  background-color: #3E3A36;
 }
 
 #pageBackground {
@@ -2606,7 +2442,7 @@ fieldset#v65-fieldset-choices {
 
 .pageIntro {
   background: url(../images/texture-cream.jpg);
-  border-bottom: 1px solid #ded6d0;
+  border-bottom: 1px solid #DED6D0;
   text-align: center;
 }
 .pageIntro .wrapper {
@@ -2647,8 +2483,8 @@ fieldset#v65-fieldset-choices {
 }
 
 .v65-calendarList-Month {
-  border-bottom: 3px double #d6d4d2;
-  color: #aba07a;
+  border-bottom: 3px double #D6D4D2;
+  color: #ABA07A;
   font-family: "Cookie", cursive;
   font-size: 2em;
   max-width: 900px;
@@ -2662,7 +2498,7 @@ fieldset#v65-fieldset-choices {
   padding-left: 0;
 }
 .v65-calendarList-Event strong {
-  color: #332f2c;
+  color: #332F2C;
   font-family: "Karla", sans-serif;
   font-weight: normal;
   font-size: 0.9em;
@@ -2683,20 +2519,20 @@ fieldset#v65-fieldset-choices {
 #v65-CalendarTable {
   background-color: transparent;
   border: 0;
-  color: #d6d4d2;
+  color: #D6D4D2;
 }
 #v65-CalendarTable th {
   background-color: transparent;
   border: 0;
-  border-bottom: 2px solid #d6d4d2;
+  border-bottom: 2px solid #D6D4D2;
   color: #6d6d6d;
   padding: 5px 0;
 }
 #v65-CalendarTable td {
   background-color: transparent;
-  border-left: 2px solid #d6d4d2;
-  border-bottom: 2px solid #d6d4d2;
-  border-right: 2px solid #d6d4d2;
+  border-left: 2px solid #D6D4D2;
+  border-bottom: 2px solid #D6D4D2;
+  border-right: 2px solid #D6D4D2;
   height: 80px;
 }
 #v65-CalendarTable .v65-CalendarDay {
@@ -2718,13 +2554,13 @@ fieldset#v65-fieldset-choices {
 }
 @media screen and (max-width: 580px) {
   #v65-CalendarTable .v65-CalendarEvent {
-    background: #5f794c;
+    background: #5F794C;
     border-radius: 3px;
     padding: 0;
   }
 }
 #v65-CalendarTable .v65-CalendarEvent a {
-  color: #aba07a;
+  color: #ABA07A;
 }
 @media screen and (max-width: 580px) {
   #v65-CalendarTable .v65-CalendarEvent a {
@@ -2742,7 +2578,7 @@ fieldset#v65-fieldset-choices {
 
 #v65-CalendarWrapper .icon-arrow-right,
 #v65-CalendarWrapper .icon-arrow-left {
-  color: #aba07a;
+  color: #ABA07A;
   padding: 7px;
 }
 #v65-CalendarWrapper h2 {
@@ -2798,12 +2634,12 @@ fieldset#v65-fieldset-choices {
     display: block;
   }
 }
-.eventWrapper .backLink span {
+.eventWrapper .backLink i {
   font-size: 0.8em;
-  color: #aba07a;
+  color: #ABA07A;
 }
 .eventWrapper .backLink .eventsBackButton {
-  color: #aba07a;
+  color: #ABA07A;
   font-family: "Karla", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -2825,7 +2661,7 @@ fieldset#v65-fieldset-choices {
   font-weight: normal;
 }
 #v65-CalendarEventTable tr td:first-child {
-  color: #332f2c;
+  color: #332F2C;
   font-family: "Prata", serif;
 }
 #v65-CalendarEventTable tr td:last-child {
@@ -2863,14 +2699,14 @@ fieldset#v65-fieldset-choices {
 
 .v65-recipe {
   max-width: 900px;
-  border-bottom: 3px double #d6d4d2;
+  border-bottom: 3px double #D6D4D2;
   text-align: left;
   padding: 1.5em 0;
   position: relative;
   margin: 0 auto;
 }
 .v65-recipe .v65-recipe-date {
-  color: #aba07a;
+  color: #ABA07A;
   font-family: "Cookie", cursive;
   font-size: 1.7em;
   font-style: normal;
@@ -2918,7 +2754,7 @@ fieldset#v65-fieldset-choices {
   transform: translateX(10px);
 }
 .v65-recipe .recipe-arrow a {
-  color: #5f794c;
+  color: #5F794C;
 }
 
 .v65-recipe-drilldown {
@@ -2926,7 +2762,7 @@ fieldset#v65-fieldset-choices {
 }
 
 .v65-recipe-drilldown-subtitle {
-  color: #332f2c;
+  color: #332F2C;
   font-family: "Prata", serif;
   font-size: 1.3em;
   font-style: normal;
@@ -2949,7 +2785,7 @@ fieldset#v65-fieldset-choices {
   }
 }
 .v65-recipe-drilldown-right .v65-recipe-attributeLabel {
-  color: #332f2c;
+  color: #332F2C;
   font-family: "Karla", sans-serif;
   font-size: 0.9em;
   font-style: normal;
@@ -2975,7 +2811,7 @@ fieldset#v65-fieldset-choices {
 }
 
 .v65-recipe-drilldown-related-products {
-  border-top: 2px solid #d6d4d2;
+  border-top: 2px solid #D6D4D2;
   margin-top: 3em;
 }
 .v65-recipe-drilldown-related-products .v65-product-title {
@@ -3006,9 +2842,9 @@ form#v65-emailAFriend .formatBeside label {
 form#v65-emailAFriend textarea,
 form#v65-emailAFriend .formatBeside input[type=text],
 form#v65-emailAFriend .formatBeside input[type=password],
-form#v65-emailAFriend .formatBeside input[type='username'],
-form#v65-emailAFriend .formatBeside input[type='tel'],
-form#v65-emailAFriend .formatBeside input[type='email'] {
+form#v65-emailAFriend .formatBeside input[type=username],
+form#v65-emailAFriend .formatBeside input[type=tel],
+form#v65-emailAFriend .formatBeside input[type=email] {
   float: right;
   width: 68% !important;
   height: 3em;
@@ -3030,16 +2866,16 @@ form#v65-emailAFriend .formatBeside input[type='email'] {
   form#v65-emailAFriend .formatBeside label {
     width: 38% !important;
   }
-  form#v65-emailAFriend .formatBeside label[for="submit"] {
+  form#v65-emailAFriend .formatBeside label[for=submit] {
     width: 0% !important;
     padding: 0;
   }
   form#v65-emailAFriend textarea,
-  form#v65-emailAFriend .formatBeside input[type=text],
-  form#v65-emailAFriend .formatBeside input[type=password],
-  form#v65-emailAFriend .formatBeside input[type='username'],
-  form#v65-emailAFriend .formatBeside input[type='tel'],
-  form#v65-emailAFriend .formatBeside input[type='email'] {
+form#v65-emailAFriend .formatBeside input[type=text],
+form#v65-emailAFriend .formatBeside input[type=password],
+form#v65-emailAFriend .formatBeside input[type=username],
+form#v65-emailAFriend .formatBeside input[type=tel],
+form#v65-emailAFriend .formatBeside input[type=email] {
     height: 2em;
     line-height: 2em;
     width: 60% !important;
@@ -3048,9 +2884,9 @@ form#v65-emailAFriend .formatBeside input[type='email'] {
 /* ----- c. Store Styles ----- */
 @media screen and (max-width: 725px) {
   #v65-fieldset-wholesalerInfo, #v65-fieldset-billingInfo,
-  #v65-fieldset-shippingOptions, #v65-fieldset-shippingInfo,
-  #v65-fieldset-paymentMethod, #v65-fieldset-sourceCode,
-  #v65-fieldset-usernamePassword {
+#v65-fieldset-shippingOptions, #v65-fieldset-shippingInfo,
+#v65-fieldset-paymentMethod, #v65-fieldset-sourceCode,
+#v65-fieldset-usernamePassword {
     width: 98%;
   }
 }
@@ -3118,7 +2954,7 @@ form#v65-emailAFriend .formatBeside input[type='email'] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  border: 5px ridge #aba07a;
+  border: 5px ridge #ABA07A;
   float: left;
   margin: 1em 2%;
   padding: 30px 2% 10px;
@@ -3153,7 +2989,7 @@ form#v65-emailAFriend .formatBeside input[type='email'] {
 }
 @media screen and (max-width: 940px) {
   .club-one-third-center .v65-club,
-  .club-one-third-left .v65-club {
+.club-one-third-left .v65-club {
     margin: 1em 0;
     width: 100%;
   }
@@ -3165,7 +3001,7 @@ form#v65-emailAFriend .formatBeside input[type='email'] {
 }
 @media screen and (max-width: 940px) {
   .club-half-center .v65-club,
-  .club-half-left .v65-club {
+.club-half-left .v65-club {
     margin: 1em 0;
     width: 100%;
   }
@@ -3204,7 +3040,7 @@ form#v65-emailAFriend .formatBeside input[type='email'] {
 }
 
 .v65-product-addToCart-price {
-  color: #332f2c;
+  color: #332F2C;
   font-size: 0.9em;
 }
 
@@ -3295,7 +3131,7 @@ form#v65-emailAFriend .formatBeside input[type='email'] {
 }
 @media screen and (max-width: 580px) {
   .v65-product1UpStore .v65-product-infoWrapper,
-  .v65-product1UpStore .v65-product-commerceWrapper {
+.v65-product1UpStore .v65-product-commerceWrapper {
     width: 81%;
   }
 }
@@ -3382,7 +3218,7 @@ form#v65-emailAFriend .formatBeside input[type='email'] {
 }
 
 .wineSpecs, .wineProfile {
-  border-bottom: 1px solid #d6d4d2;
+  border-bottom: 1px solid #D6D4D2;
   max-width: 750px;
   margin: 0 auto;
   padding: 15px 0;
@@ -3395,23 +3231,23 @@ form#v65-emailAFriend .formatBeside input[type='email'] {
   position: relative;
 }
 .wineSpecs .v65-wine-specs-title:after, .wineSpecs .v65-wine-profile-title:after, .wineProfile .v65-wine-specs-title:after, .wineProfile .v65-wine-profile-title:after {
-  content: "\e097";
-  color: #aba07a;
-  font-family: 'icomoon';
+  content: "";
+  color: #ABA07A;
+  font-family: "icomoon";
   font-size: 0.7em;
   position: absolute;
   bottom: 3px;
   right: 12px;
 }
 .wineSpecs.opened .v65-wine-specs-title:after, .wineSpecs.opened .v65-wine-profile-title:after, .wineProfile.opened .v65-wine-specs-title:after, .wineProfile.opened .v65-wine-profile-title:after {
-  content: "\e096";
+  content: "";
 }
 .wineSpecs .v65-wine-specs, .wineSpecs .v65-wine-profile, .wineProfile .v65-wine-specs, .wineProfile .v65-wine-profile {
   margin-left: 10px;
 }
 
 .wineSpecs {
-  border-top: 1px solid #d6d4d2;
+  border-top: 1px solid #D6D4D2;
   width: 100%;
 }
 @media screen and (max-width: 860px) {
@@ -3425,7 +3261,7 @@ form#v65-emailAFriend .formatBeside input[type='email'] {
   margin: 0.5em 0;
 }
 .wineSpecs .v65-product-attributeLabel {
-  color: #4e4937;
+  color: #4E4937;
   display: inline-block;
   font-family: "Karla", sans-serif;
   font-size: 0.95em;
@@ -3466,7 +3302,7 @@ form#v65-emailAFriend .formatBeside input[type='email'] {
   margin: 0.75em 0;
 }
 .wineProfile .v65-wine-profile .v65-product-attributeLabel {
-  color: #4e4937;
+  color: #4E4937;
   font-family: "Karla", sans-serif;
   font-size: 0.95em;
   font-weight: normal;
@@ -3478,7 +3314,7 @@ form#v65-emailAFriend .formatBeside input[type='email'] {
 
 .bottomProductInfo {
   background: url(../images/texture-cream.jpg);
-  border-top: 1px solid #ded6d0;
+  border-top: 1px solid #DED6D0;
   margin-top: 7em;
 }
 
@@ -3496,7 +3332,7 @@ form#v65-emailAFriend .formatBeside input[type='email'] {
   font-size: 1.5em;
 }
 .productReviews .v65-product-reviews .v65-product-review-wrapper {
-  border-color: #d6d4d2;
+  border-color: #D6D4D2;
   max-width: 650px;
   margin: 3em auto 0;
 }
@@ -3511,7 +3347,7 @@ form#v65-emailAFriend .formatBeside input[type='email'] {
   margin: 3em auto 1em;
 }
 .productReviews .v65-ProductRating .v65-form legend {
-  color: #4e4937;
+  color: #4E4937;
   font-family: "Karla", sans-serif;
   font-size: 1em;
   letter-spacing: 0.5px;
@@ -3590,12 +3426,9 @@ a.modalLinkAltBtn.modalClose:active {
 }
 a.modalLinkBtn.modalClose span,
 a.modalLinkAltBtn.modalClose span {
-  padding: 1em;
-}
-a.modalLinkBtn.modalClose span,
-a.modalLinkAltBtn.modalClose span {
   color: #73695c;
   font-size: 19pt;
+  line-height: 1.7;
   padding: 0 1px;
 }
 
@@ -3604,7 +3437,7 @@ a.modalLinkAltBtn.modalClose span {
 }
 
 div#v65-modalCartBody {
-  background: #f2efed;
+  background: #F2EFED;
   border-color: #e3ddd8;
 }
 div#v65-modalCartBody .right {
@@ -3658,7 +3491,7 @@ div#v65-modalCartBody .right {
 }
 
 .v65-product-quickView {
-  border: 1px solid #d6d4d2;
+  border: 1px solid #D6D4D2;
   border-radius: 0;
   font-size: 16px;
   font-weight: bold;
@@ -3674,7 +3507,7 @@ div#v65-modalCartBody .right {
 
 .v65-quickView {
   background: #fdfcfc;
-  border: 1px solid #d6d4d2;
+  border: 1px solid #D6D4D2;
   border-radius: 0;
   box-shadow: none;
 }
@@ -3701,15 +3534,15 @@ div#v65-modalCartBody .right {
 .v65-quickView .modalClose a:hover, .v65-quickView .modalClose a:focus, .v65-quickView .modalClose a:active {
   background: transparent;
 }
-.v65-quickView .modalClose a span {
-  color: #332f2c;
+.v65-quickView .modalClose a i {
+  color: #332F2C;
   font-size: 2em;
 }
 .v65-quickView .v65-product-tabs {
   border-bottom: 0;
 }
 .v65-quickView .v65-product-tabs li a {
-  color: #4e4937;
+  color: #4E4937;
   background: #fdfcfc;
   border: 0;
   font-weight: normal;
@@ -3726,7 +3559,7 @@ div#v65-modalCartBody .right {
   padding: 25px 0;
 }
 .v65-quickView .v65-product-tab-active a {
-  color: #aba07a;
+  color: #ABA07A;
 }
 .v65-quickView .v65-product-tabRightcol {
   float: none;
@@ -3745,7 +3578,7 @@ div#v65-modalCartBody .right {
 }
 .v65-quickView .v65-wine-specs .v65-product-attributeLabel,
 .v65-quickView .v65-wine-profile .v65-product-attributeLabel {
-  color: #4e4937;
+  color: #4E4937;
   font-family: "Karla", sans-serif;
   font-size: 0.95em;
   font-weight: normal;
@@ -3765,7 +3598,7 @@ div#v65-modalCartBody .right {
   margin-left: 0;
 }
 .v65-quickView .v65-product-review-wrapper .v65-product-review-reviewerName {
-  color: #332f2c;
+  color: #332F2C;
   font-size: 1em;
 }
 
@@ -3875,11 +3708,11 @@ div#v65-modalCartBody .right {
   width: 96%;
 }
 #v65-checkoutCartSummaryWrapper #v65-checkoutCartSummaryMini {
-  border-bottom: 2px solid #aba07a;
+  border-bottom: 2px solid #ABA07A;
   margin-bottom: 1em;
 }
 #v65-checkoutCartSummaryWrapper #v65-couponFormWrapper legend, #v65-checkoutCartSummaryWrapper #v65-giftCardFormWrapper legend, #v65-checkoutCartSummaryWrapper #v65-loyaltyPointsFormWrapper legend {
-  color: #4e4937;
+  color: #4E4937;
   font-family: "Karla", sans-serif;
   font-size: 0.9em;
   letter-spacing: 0.5px;
@@ -4018,38 +3851,36 @@ form#v65-emailAFriend .formatBeside input[type=password] {
   width: 100%;
   height: 100%;
   background-color: #0000004f;
-  content: '';
+  content: "";
 }
 
-@media screen and (orientation:landscape)
-and (max-device-width: 700px) {
-   
-   #v65-modalContentWrapper{
-     left: 0%;
-     top: 0%;
-     margin: 0;
-     width: 100%;
-     border: none;
-   }
-
-   #v65-modalContent p{
-     font-size: 10pt;
-   }
-
-   .v65-form{
-    width: 50%;float: left;margin-right: 2%;
+@media screen and (orientation: landscape) and (max-device-width: 700px) {
+  #v65-modalContentWrapper {
+    left: 0%;
+    top: 0%;
+    margin: 0;
+    width: 100%;
+    border: none;
   }
 
-   .v65-form input[type=text], .v65-form input[type=password]{
-      width: 93% !important;
-   }
+  #v65-modalContent p {
+    font-size: 10pt;
+  }
 
-   .v65-form legend{
-     margin-bottom: 0 !important;
-   }
+  .v65-form {
+    width: 50%;
+    float: left;
+    margin-right: 2%;
+  }
+
+  .v65-form input[type=text], .v65-form input[type=password] {
+    width: 93% !important;
+  }
+
+  .v65-form legend {
+    margin-bottom: 0 !important;
+  }
 }
-
-
 /*   ===================================================================================================
      5. Blog
 ======================================================================================================== */
@@ -4138,7 +3969,7 @@ button span {
   }
 }
 button.defaultBtn, button.modalBtn, button.largeBtn {
-  background: #5f794c;
+  background: #5F794C;
   letter-spacing: 0.5px;
   border-radius: 3px;
   text-transform: uppercase;
@@ -4169,7 +4000,7 @@ button.modalBtn, button.altModalBtn {
   line-height: inherit;
 }
 button.altBtn, button.altModalBtn, button.altLargeBtn {
-  background: #b1b1b1;
+  background: #B1B1B1;
   border-radius: 3px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
@@ -4194,11 +4025,11 @@ a span {
 }
 @media screen and (min-width: 581px) {
   a span {
-    padding: 0;
+    padding: 0 2em;
   }
 }
 a.linkBtn, a.modalLinkBtn, a.largeLinkBtn {
-  background: #5f794c;
+  background: #5F794C;
   border-radius: 3px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
@@ -4213,7 +4044,7 @@ a.linkBtn span, a.modalLinkBtn span, a.largeLinkBtn span {
 }
 @media screen and (min-width: 581px) {
   a.linkBtn span, a.modalLinkBtn span, a.largeLinkBtn span {
-    padding: 0 2em;
+    padding: 0;
   }
 }
 a.linkBtn:hover, a.linkBtn:active, a.modalLinkBtn:hover, a.modalLinkBtn:active, a.largeLinkBtn:hover, a.largeLinkBtn:active {
@@ -4228,7 +4059,7 @@ a.largeLinkBtn {
   }
 }
 a.linkAltBtn, a.modalLinkAltBtn, a.modalLinkAltBtn {
-  background: #b1b1b1;
+  background: #B1B1B1;
   border-radius: 3px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
@@ -4290,17 +4121,17 @@ footer .footerSection {
   }
 }
 footer .footerSection h2 {
-  color: #b3ab96;
-  border-bottom: 1px solid #403d38;
+  color: #B3AB96;
+  border-bottom: 1px solid #403D38;
   font-size: 1.1em;
   letter-spacing: 0.3px;
   padding-bottom: 9px;
 }
-footer .footerSection h2, footer .footerSection p, footer .footerSection nav, footer .footerSection .v65-socialMediaLinks {
+footer .footerSection h2, footer .footerSection p, footer .footerSection nav, footer .footerSection li, footer .footerSection .v65-socialMediaLinks {
   text-align: left;
 }
 @media screen and (max-width: 580px) {
-  footer .footerSection h2, footer .footerSection p, footer .footerSection li, footer .footerSection nav, footer .footerSection .v65-socialMediaLinks {
+  footer .footerSection h2, footer .footerSection p, footer .footerSection nav, footer .footerSection li, footer .footerSection .v65-socialMediaLinks {
     text-align: center;
   }
 }
@@ -4387,3 +4218,5 @@ footer .copyright a {
   float: left;
   font-size: 1em;
 }
+
+/*# sourceMappingURL=screen.min.css.map */
